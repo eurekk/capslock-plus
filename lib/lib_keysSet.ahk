@@ -153,7 +153,25 @@ keySchemeInit_capslox(){
         keyset.caps_f11:="keyFunc_doNothing"
     if(!keyset.caps_f12)
         keyset.caps_f12:="keyFunc_switchClipboard"
-        
+
+    ; Shift--------------------------------------------
+    if(!keyset.caps_shift_i)
+        keyset.caps_shift_i:="keyFunc_maximizeWindow"
+    if(!keyset.caps_shift_k)
+        keyset.caps_shift_k:="keyFunc_minimizeWindow"
+    if(!keyset.caps_shift_j)
+        keyset.caps_shift_j:="keyFunc_maximizeLeftWindow"
+    if(!keyset.caps_shift_l)
+        keyset.caps_shift_l:="keyFunc_maximizeRightWindow"
+    if(!keyset.caps_shift_u)
+        keyset.caps_shift_u:="keyFunc_leftVirtualDesktop"
+    if(!keyset.caps_shift_o)
+        keyset.caps_shift_o:="keyFunc_rightVirtualDesktop"
+    if(!keyset.caps_shift_m)
+        keyset.caps_shift_m:="keyFunc_newVirtualDesktop"
+    if(!keyset.caps_shift_dot)
+        keyset.caps_shift_dot:="keyFunc_closeVirtualDesktop"
+
     ; LAlt--------------------------------------------
 
     if(!keyset.caps_lalt_a)
@@ -434,6 +452,24 @@ keySchemeInit_capslockPlus(){
     if(!keyset.caps_f12)
         keyset.caps_f12:="keyFunc_switchClipboard"
         
+    ; Shift--------------------------------------------
+    if(!keyset.caps_shift_i)
+        keyset.caps_shift_i:="keyFunc_maximizeWindow"
+    if(!keyset.caps_shift_k)
+        keyset.caps_shift_k:="keyFunc_minimizeWindow"
+    if(!keyset.caps_shift_j)
+        keyset.caps_shift_j:="keyFunc_maximizeLeftWindow"
+    if(!keyset.caps_shift_l)
+        keyset.caps_shift_l:="keyFunc_maximizeRightWindow"
+    if(!keyset.caps_shift_u)
+        keyset.caps_shift_u:="keyFunc_leftVirtualDesktop"
+    if(!keyset.caps_shift_o)
+        keyset.caps_shift_o:="keyFunc_rightVirtualDesktop"
+    if(!keyset.caps_shift_m)
+        keyset.caps_shift_m:="keyFunc_newVirtualDesktop"
+    if(!keyset.caps_shift_dot)
+        keyset.caps_shift_dot:="keyFunc_closeVirtualDesktop"
+
     ; LAlt--------------------------------------------
 
     if(!keyset.caps_lalt_a)

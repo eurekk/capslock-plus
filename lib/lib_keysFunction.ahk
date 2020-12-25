@@ -2,6 +2,56 @@
 ; 所有按键对应功能都放在这，为防止从set.ini通过按键设置调用到非按键功能函数，
 ; 规定函数以"keyFunc_"开头
 
+keyFunc_maximizeWindow(){
+	SendInput, #{Up}
+    return
+}
+
+keyFunc_minimizeWindow(){
+	SendInput, #{Down}
+    return
+}
+
+keyFunc_maximizeLeftWindow(){
+	SendInput, #{Left}
+    return
+}
+
+keyFunc_maximizeRightWindow(){
+	SendInput, #{Right}
+    return
+}
+
+keyFunc_leftVirtualDesktop(){
+	SendInput, #^{Left}
+    return
+}
+
+keyFunc_rightVirtualDesktop(){
+	SendInput, #^{Right}
+    return
+}
+
+keyFunc_newVirtualDesktop(){
+	SendInput, #^{d}
+    return
+}
+
+keyFunc_closeVirtualDesktop(){
+	SendInput, #^{F4}
+    return
+}
+
+keyFunc_leftMonitor(){
+	SendInput, #+{Left}
+    return
+}
+
+keyFunc_rightMonitor(){
+	SendInput, #+{Right}
+    return
+}
+
 keyFunc_doNothing(){
     return
 }

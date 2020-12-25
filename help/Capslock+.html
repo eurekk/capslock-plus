@@ -1,0 +1,1928 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://capslox.com/capslock-plus/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <title>Capslock+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="概述
+  简介：Capslock+是一个加强Capslock键功能，以提高效率的工具。
+  版本：3.1.0 | 2020-04-25 by 陈俊凯">
+
+
+    <link rel="icon" href="https://capslox.com/capslock-plus/favicon.ico">
+
+    <link rel="stylesheet" href="./Capslock+_files/style.css" type="text/css">
+    <!--<link rel="stylesheet" href="./css/font-awesome.min.css"></link>-->
+    <link href="https://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="/css/style.css" type="text/css">-->
+    <link id="capslock-style" rel="stylesheet" href="./Capslock+_files/capslock-style.css" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css"> -->
+    <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+
+    <!-- Google Analytics -->
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://cdn.bootcss.com/autotrack/2.4.1/autotrack.js"></script>
+    <!-- End Google Analytics -->
+
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        var isProd = /(www\.)?capslox\.com/i.test(location.hostname)
+        var gaid = isProd ? 'UA-116731260-1' : 'UA-116731260-2'
+        ga('create', gaid, 'auto');
+        ga('require', 'urlChangeTracker');
+        ga('require', 'maxScrollTracker');
+        ga('require', 'eventTracker');
+        ga('require', 'outboundFormTracker');
+        ga('require', 'outboundLinkTracker');
+        ga('require', 'cleanUrlTracker', {
+            stripQuery: true,
+            queryDimensionIndex: 2,
+            indexFilename: 'index.html',
+            trailingSlash: 'remove'
+        });
+        ga('require', 'mediaQueryTracker', {
+            definitions: [
+                {
+                    name: 'Breakpoint',
+                    dimensionIndex: 1,
+                    items: [
+                        { name: 'mobile', media: 'all' },
+                        { name: 'tablet', media: '(min-width: 769px)' },
+                        { name: 'desktop', media: '(min-width: 1024px)' }
+                    ]
+                }
+            ],
+            changeTemplate: function (newValue, oldValue) {
+                return newValue;
+            },
+            changeTimeout: 3000
+        });
+        ga('require', 'pageVisibilityTracker', {
+            sendInitialPageview: true,
+        });
+        // The command below is no longer needed while using pageVisibilityTracker
+        // ga('send', 'pageview');
+    </script>
+<script type="text/javascript" async="" src="https://cjkisme.disqus.com/embed.js"></script><link rel="prefetch" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.2a0be1cac62547aa91037395a06bf8b3.css"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.d5bc59d0180bbc154286a8e417e4c4bc.js"><link rel="prefetch" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.7d72841d9245e018db276c51b9667402.js"><link rel="prefetch" as="script" href="https://disqus.com/next/config.js"></head>
+
+<body><style>@-webkit-keyframes slideDown {0% {-webkit-transform:translateY(0);}100% {-webkit-transform:translateY(1007px);}}@-moz-keyframes slideDown {0% {-moz-transform:translateY(0);}100% {-moz-transform:translateY(1007px);}}@-o-keyframes slideDown {0% {-o-transform:translateY(0);}100% {-o-transform:translateY(1007px);}}@keyframes slideDown {0% {transform:translateY(0);}100% {transform:translateY(1007px);}}.animated.slideDown {-webkit-animation-name:slideDown;-moz-animation-name:slideDown;-o-animation-name:slideDown;animation-name:slideDown}@-webkit-keyframes slideUp {0% {-webkit-transform:translateY(1007px);}100% {-webkit-transform:translateY(0);}}@-moz-keyframes slideUp {0% {-moz-transform:translateY(1007px);}100% {-moz-transform:translateY(0);}}@-o-keyframes slideUp {0% {-o-transform:translateY(1007px);}100% {-o-transform:translateY(0);}}@keyframes slideUp {0% {transform:translateY(1007px);}100% {transform:translateY(0);}}.animated.slideUp {-webkit-animation-name:slideUp;-moz-animation-name:slideUp;-o-animation-name:slideUp;animation-name:slideUp;}</style>
+    <div id="container">
+        <div id="wrap">
+            <header id="banner">
+                <img src="./Capslock+_files/capslock_banner_1.02.gif" alt="capslock demo">
+                <span id="bannerBtn" onclick="slideDown()"><i class="fa fa-chevron-down"></i></span>
+                <span id="bannerBtn2" onclick="slideUp()"><i class="fa fa-chevron-up"></i></span>
+            </header>
+            <div class="outer">
+                <section id="main">
+                    <article id="post-simple-index" class="article article-type-post-simple" itemscope="" itemprop="blogPost">
+                        <!--<div class="article-meta">
+            <a href="/capslock+/" class="article-date">
+               <time datetime="2015-08-10T08:51:05.000Z" itemprop="datePublished">2015-08-10</time> 
+            </a>
+            
+          </div>-->
+                        <div class="article-inner" style="margin-top:78px">
+                            <header class="article-header">
+                                <div class="i18n-selector">
+                                    <a href="https://capslox.com/capslock-plus/en.html">English</a> | 中文
+                                </div>
+                                <h1 class="article-title" itemprop="name">
+                                    <!-- <img src='https://cjkis.me/assets/hexo/capslock+icon.png' style='height:48px;width:48px;' title="Capslock icon" alt="Capslock icon"></img> -->
+                                    Capslock+
+                                </h1>
+                            </header>
+                            <div class="article-entry" itemprop="articleBody">
+
+
+
+                                <h1 id="概述"><i class="fa fa-file-o"></i>概述</h1>
+                                <ul>
+                                    <li>简介：Capslock+是一个加强 Capslock 键的功能，以提高效率的工具。</li>
+                                    <li>版本：3.2.0 | 2020-10-24 by 陈俊凯</li>
+                                    <li style="color: #e32d40;">
+                                        <span style="color: #555;">声明：虽然没有任何措施来强制收费，但 Capslock+
+                                            是收费的，金额不限，请自行根据使用时间和频率判定。</span>
+                                    </li>
+                                    <li style="color: #e32d40;">
+                                        <a href="http://cjkis.me/payment/" title="付费页面" target="_blank">
+                                            ￥&nbsp;付费页面</a><br>
+                                    </li>
+                                    <li>源码：<a href="https://github.com/wo52616111/capslock-plus" title="GitHub" target="_blank">GitHub</a></li>
+                                    <li>
+                                        macOS 版本：
+                                        <a href="https://capslox.com/cn/" title="前往 Capslox 首页" class="fancybox" rel="article0">
+                                            <img style="display: inline-block; display: inline-block; vertical-align: bottom;" src="./Capslock+_files/capslox-text-logo_black.svg" alt="Capslox">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <hr>
+
+                                <h1 id="aboutCapslockPlus"><i class="fa fa-coffee"></i>了解 Capslock+</h1>
+                                <p>
+                                    如果你还不清楚 Capslock+ 有什么用，建议先看看这里：<a href="https://capslox.com/capslock-plus/what-is-the-use-of-capslock-plus/">Capslock+ 有什么用</a>
+                                </p>
+                                <p>
+                                    它图文并茂地介绍了 Capslock+
+                                    有哪些功能，以及你可以怎样去使用这些功能。而这下面的说明比较无聊（但详尽），你可以看完那篇东西再回来这里。或者是忘记了某些功能的时候按下<code>Capslock+F1</code>来打开这页查看。
+                                </p>
+                                <p>
+                                    以下是其他网站（用户）发表的介绍文章：
+                                </p>
+                                <ul>
+                                    <li>
+                                        <span>TecHour: </span><a href="https://www.bilibili.com/video/BV1LK411p7wN" target="_blank">Capslock+让你键盘效率提升百倍的神器！｜Windows快捷键工具推荐</a>
+                                    </li>
+                                    <li>
+                                        <span>Topbook: </span><a href="https://topbook.cc/overview/7?selectedArticle=1698" target="_blank">CapsLock+ | 按键功能增强应用，提高操作效率。</a>
+                                    </li>
+                                    <li>
+                                        <span>异次元软件：</span><a href="http://www.iplaysoft.com/capslock-plus.html" target="_blank">Capslock+ 键盘党都爱的高效利器 - 让 Windows 快捷键操作更加灵活强大</a>
+                                    </li>
+                                    <li>
+                                        <span>少数派：</span><a href="http://sspai.com/34479" target="_blank">Capslock+，Windows 上的新一代快捷键神器 by 阡陌-PM | Matrix 精选</a>
+                                    </li>
+                                </ul>
+                                <p>
+                                    很感谢网站和文章作者愿意为 Capslock+ 推广~
+                                </p>
+                                <hr>
+
+                                <h1 id="下载使用"><i class="fa fa-download"></i>下载使用</h1>
+                                <h2 id="下载">下载</h2>
+                                <p><a href="https://dl.capslox.com/capslock-plus/Capslock%2B_v3.2.0.exe" download="Capslock+_v3.2.0.exe" target="_blank" ga-on="click" ga-event-category="capslock-plus" ga-event-action="download" rel="external">Capslock+_v3.2.0.exe (1.20 MB)</a></p>
+                                <p>*可能会误报</p>
+
+                                <p>
+                                    <strong>v3.0 跟 v2.x 有什么不同？</strong><br>
+                                    v3.0
+                                    更改了热键的布局，更加顺手，并且通过把<code>Alt</code>键看作“增强键”来设计热键布局，让热键更易于记忆和上手。由于改动有点多，怕老用户不习惯，3.0
+                                    中保留了 2.x 的布局，并保留了 <a href="https://capslox.com/capslock-plus-v2">2.x 版本的文档页</a>。
+                                </p>
+                                <p>
+                                    <strong>要在 3.0 中使用 2.x 的热键布局</strong>，请在 <code>CapsLock+settings.ini</code> &gt;
+                                    <code>[Global]</code> 下添加：<br>
+                                    <code>default_hotkey_scheme=capslock_plus</code><br>
+                                </p>
+
+                                <p>
+                                    到<a href="https://capslox.com/capslock-plus/#%E7%89%88%E6%9C%AC%E5%8E%86%E5%8F%B2">版本历史</a>查看更新内容
+                                </p>
+                                <h2 id="使用">使用</h2>
+                                <ul>
+                                    <li style="color:#e32d40">
+                                        <span style="color:#555">
+                                            有个别同学打开 Capslock+ 后没有任何报错但有一些按键不能用（Ctrl+C / V 等），目前这个问题只发现一个原因：被 360 之类的杀毒软件
+                                            等屏蔽了。如果你有这个问题，又有用 360 之类的，请试试将 Capslock+ 添加到白名单里。
+                                        </span>
+                                    </li><br>
+                                    <li style="color:#e32d40">
+                                        <span style="color:#555">
+                                            键盘的键位冲突，也就是键盘设计上不支持某些按键同时按下，可能导致 Capslock+ 某些功能无法使用，遇到这样的问题可以把该功能设置到别的组合键上，或换一个键盘试试。
+                                            <!-- 在 v3.x+ 的版本中，窗口绑定用到了热键组合 <code>CapsLock + Windows + 数字键</code>，在少数键盘上就存在这个问题，如果遇到这个问题，
+                                            可以把绑定热键设置成其他热键组合，例如 <code>CapsLock + Alt + 数字键</code>。 -->
+                                        </span>
+                                    </li><br>
+                                    <li>
+                                        Capslock+ 在不同程序上通用，但不同程序有不同的运行机制，在有的程序界面 Capslock+
+                                        可能会有个别功能实现不了或实现不理想，请将就和谅解。
+                                    </li><br>
+                                    <li>
+                                        修改注册表交换了<code>Capslock</code>和<code>Ctrl</code>的同学，其实可以正常使用 Capslock+
+                                        的，只是所有功能都用<code>Ctrl</code>（键盘上的）加其他键实现而已。
+                                    </li><br>
+                                    <li>
+                                        如果提示<code>无法验证发布者。您确定要运行此软件吗？</code> -&gt; <code>运行</code>
+                                    </li><br>
+                                    <li>
+                                        如果提示<code>Windows 已保护你的电脑</code>，点击<code>更多信息</code> -&gt; <code>仍要运行</code>
+                                    </li><br>
+                                    <li>
+                                        启动 Capslock+
+                                        后，请把<code>Capslock</code>键当做类似<code>Shift</code><code>Ctrl</code>和<code>Alt</code>的修饰键，与其他键组合使用不同功能。
+                                    </li><br>
+                                    <li>
+                                        启动 Capslock+ 后，同文件夹下会生成以下文件：
+                                        <ul>
+                                            <li>
+                                                <code>CapsLock+settings.ini</code>：Capslock+
+                                                的设置文件，保存各种设置信息，请参考<code>CapsLock+settingsDemo.ini</code>，并在本文件进行设置。
+                                            </li>
+                                            <li>
+                                                <code>CapsLock+settingsDemo.ini</code>：Capslock+
+                                                的设置参考样本文件，保存着各种设置信息的例子和详细说明，请认真查看该文件里的说明。
+                                            </li>
+                                            <li>
+                                                <code>CapsLock+winsInfosRecorder.ini</code>：用于窗口绑定时记录相关信息的文件，请无视它，不要去手动修改它。
+                                            </li>
+                                            <li>
+                                                <code>loadScript</code>文件夹
+                                                <ul>
+                                                    <li>
+                                                        <code>scriptDemo.js</code>：Capslock+ 可以加载 js 文件以扩展功能，这是样本 js
+                                                        文件。更详细的说明可以看下面<a href="https://capslox.com/capslock-plus/#clTabScript">TabScript</a>部分中，关于关于计算功能的说明。
+                                                    </li>
+                                                    <li>
+                                                        <code>debug.html</code>：对 js 文件调试的 html 文件。将编写的 js
+                                                        文件引入本文件，再用浏览器打开本文件，在控制台中进行调试。
+                                                    </li>
+                                                </ul>
+                                                如果觉得不需要本文件夹以及里面的文件，删除前需先清除<code>CapsLock+settings.ini</code>文件下，<code>Global</code>段的<code>loadScript</code>设置，否则在
+                                                Capslock+ 启动时将自动创建<code>loadScript</code>文件夹以及里面的文件。
+                                            </li>
+                                        </ul>
+                                    </li><br>
+                                    <li>
+                                        启动过一次 Capslock+ 后，以后可以通过快捷键<code>Ctrl+Alt+Capslock</code>启动 Capslock+。
+                                    </li><br>
+                                    <li>
+                                        右键系统托盘中的 Capslock+ 图标可以暂停或退出。
+                                    </li>
+                                </ul>
+
+                                <hr>
+
+                                <section class="function-section">
+                                    <h1 id="功能说明"><i class="fa fa-keyboard-o"></i>功能说明</h1>
+                                    <p>以下功能都需要按下<code>Capslock</code>，而说明中基本都省略或缩写了<code>Capslock</code>，例如<code>+Q</code>是<code>Capslock+Q</code>
+                                    </p>
+                                    <p>按键对应的功能可以在<code>Capslock+settings.ini</code>下的<code>[Keys]</code>设置，具体请参考<code>Capslock+settingsDemo.ini</code>
+                                    </p>
+                                    <p>*在绝大多数功能的基础上加上<code>Alt</code>会是该功能的“增强版”，记住这个规律可以让你需要记忆的热键更少，更容易上手。</p>
+
+                                    <h2 id="basicFunctions" class="funcClass">基础功能</h2>
+                                    <div class="tableWrap">
+                                        <table class="funcTable">
+                                            <thead>
+                                                <tr>
+                                                    <th style="text-align:center"><kbd class="pressed">Capslock</kbd>
+                                    <span class="key-plus">+</span></th>
+                                    <th>功能</th>
+                                    <th>说明</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>短按</kbd></div>
+                                            </td>
+                                            <td>切换大小写</td>
+                                            <td>
+                                                如果需要修改按键动作，可以在 <code>CapsLock+settings.ini</code> 下的
+                                                <code>[Keys]</code> 下添加设置，例如：<code>press_caps=keyFunc_esc</code>，按下 Caps Lock 发送 Esc。
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>长按</kbd></div>
+                                            </td>
+                                            <td>不操作</td>
+                                            <td>视为犹豫操作</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>E</kbd></div>
+                                                <div class="kbd-wrap"><kbd>D</kbd></div>
+                                                <div class="kbd-wrap"><kbd>S</kbd></div>
+                                                <div class="kbd-wrap"><kbd class="touch-point">F</kbd></div>
+                                            </td>
+                                            <td>上 / 下 / 左 / 右</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>E</kbd></div>
+                                                <div class="kbd-wrap"><kbd>D</kbd></div>
+                                            </td>
+                                            <td>上 / 下 3 次</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>S</kbd></div>
+                                                <div class="kbd-wrap"><kbd>F</kbd></div>
+                                            </td>
+                                            <td>左 / 右 5 次</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>T</kbd></div>
+                                                <div class="kbd-wrap"><kbd>B</kbd></div>
+                                            </td>
+                                            <td>上 / 下 10 次</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>T</kbd></div>
+                                                <div class="kbd-wrap"><kbd>B</kbd></div>
+                                            </td>
+                                            <td>上 / 下 30 次</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>A</kbd></div>
+                                                <div class="kbd-wrap"><kbd>G</kbd></div>
+                                            </td>
+                                            <td>向左 / 右按单词移动<sup>[1]</sup></td>
+                                            <td>[1]: 中文的话不好界定“单词”界限，一般会整句跳过</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>A</kbd></div>
+                                                <div class="kbd-wrap"><kbd>G</kbd></div>
+                                            </td>
+                                            <td>向左 / 右移动 3 个单词</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>P</kbd></div>
+                                                <div class="kbd-wrap"><kbd>;</kbd></div>
+                                            </td>
+                                            <td>移动至行首 / 行尾</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>P</kbd></div>
+                                                <div class="kbd-wrap"><kbd>;</kbd></div>
+                                            </td>
+                                            <td>移动至页首 / 页尾</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>I</kbd></div>
+                                                <div class="kbd-wrap"><kbd>K</kbd></div>
+                                                <div class="kbd-wrap"><kbd class="touch-point">J</kbd></div>
+                                                <div class="kbd-wrap"><kbd>L</kbd></div>
+                                            </td>
+                                            <td>上 / 下 / 左 / 右选中文字</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>I</kbd></div>
+                                                <div class="kbd-wrap"><kbd>K</kbd></div>
+                                            </td>
+                                            <td>向上 / 下选中 3 次</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>J</kbd></div>
+                                                <div class="kbd-wrap"><kbd>L</kbd></div>
+                                            </td>
+                                            <td>向左 / 右选中 5 次</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>Y</kbd></div>
+                                                <div class="kbd-wrap"><kbd>N</kbd></div>
+                                            </td>
+                                            <td>向上 / 下选中 10 次</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>Y</kbd></div>
+                                                <div class="kbd-wrap"><kbd>N</kbd></div>
+                                            </td>
+                                            <td>向上 / 下选中 30 次</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>H</kbd></div>
+                                                <div class="kbd-wrap"><kbd>.</kbd></div>
+                                            </td>
+                                            <td>向左 / 右选中单词</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>H</kbd></div>
+                                                <div class="kbd-wrap"><kbd>.</kbd></div>
+                                            </td>
+                                            <td>向左 / 右选中 3 个单词</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>,</kbd></div>
+                                            </td>
+                                            <td>选中当前单词</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>,</kbd></div>
+                                            </td>
+                                            <td>选中当前行</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>U</kbd></div>
+                                                <div class="kbd-wrap"><kbd>O</kbd></div>
+                                            </td>
+                                            <td>选中至行首 / 行尾</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>U</kbd></div>
+                                                <div class="kbd-wrap"><kbd>O</kbd></div>
+                                            </td>
+                                            <td>选中至页首 / 页尾</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>W</kbd></div>
+                                                <div class="kbd-wrap"><kbd>R</kbd></div>
+                                            </td>
+                                            <td>向后 / 向前删除</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>W</kbd></div>
+                                                <div class="kbd-wrap"><kbd>R</kbd></div>
+                                            </td>
+                                            <td>向后 / 向前删除单词</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>[</kbd></div>
+                                                <div class="kbd-wrap"><kbd>/</kbd></div>
+                                            </td>
+                                            <td>删除至行首 / 行尾</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>[</kbd></div>
+                                                <div class="kbd-wrap"><kbd>/</kbd></div>
+                                            </td>
+                                            <td>删除至页首 / 页尾</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>Backspace</kbd></div>
+                                            </td>
+                                            <td>删除当前行</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd class="pressed">LAlt</kbd></div><span class="key-plus">+</span>
+                                                <div class="kbd-wrap"><kbd>Backspace</kbd></div>
+                                            </td>
+                                            <td>删除全部内容</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>Space</kbd></div>
+                                            </td>
+                                            <td>发送按键：Enter</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>Enter</kbd></div>
+                                            </td>
+                                            <td>向下插入一行</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>X</kbd></div>
+                                                <div class="kbd-wrap"><kbd>C</kbd></div>
+                                            </td>
+                                            <td>
+                                                <ol>
+                                                    <li>选中(文字、文件、文件夹)时，正常<code>剪切</code> / <code>复制</code></li>
+                                                    <li>(文字编辑时)没有选中文字时，<code>剪切</code> / <code>复制</code>光标所在行的文字</li>
+                                                </ol>
+                                            </td>
+                                            <td>
+                                                <ol>
+                                                    <li>
+                                                        不在文字编辑中，又没选中任何内容时，可能会有意外的操作(<a href="https://capslox.com/capslock-plus/#%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%97%E6%93%8D%E4%BD%9C%E7%9A%84%E6%9C%BA%E5%88%B6" title="关于文字操作的机制">实现机制</a>问题，会全选文件并复制之类的)，最好别乱按
+                                                    </li>
+                                                    <li>
+                                                        复制粘贴的内容和系统复制粘贴内容独立开，可以分别复制不同内容
+                                                    </li>
+                                                    <li>
+                                                        剪贴板中的内容一直是最后一次使用（包括剪切、复制、粘贴）剪贴板的内容，例如：<code>Ctrl+C</code>复制文字<code>apple</code>，然后<code>Capslock+C</code>复制<code>banana</code>，这时<code>右键</code>-&gt;<code>粘贴</code>，结果会是<code>banana</code>。然后<code>Ctrl+V</code>，结果会是<code>apple</code>，再<code>右键</code>-&gt;<code>粘贴</code>，结果会是<code>apple</code>
+                                                    </li>
+                                                    <li>
+                                                        原本在 Excel
+                                                        中，选中一行（列）以上表格，再使用复制相关功能会导致弹出<code>图片太大，超过部分将被截取。</code>的问题。这是因为在
+                                                        Excel 中将剪贴板大量的数据保存起来时，Excel 就会这样提醒，在其他一些剪贴板管理软件上也会有这问题，这应该算
+                                                        Excel 的问题。对于这个问题目前 Capslock+ 的解决办法是，在保存剪贴板数据时取消对 Excel 窗口的激活，不让
+                                                        Excel 检测到数据的保存，保存完数据再切回去，这样做的副作用是 Excel
+                                                        窗口看起来会闪烁一下，暂时没有想到更好的解决办法，如果觉得接受不了的话你可以按下 <code>Capslock+F12</code> 来暂时关掉 Capslock+
+                                                        的剪贴板功能。
+                                                    </li>
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                <div class="kbd-wrap"><kbd>V</kbd></div>
+                                            </td>
+                                            <td>粘贴<code>+X</code> / <code>+C</code>的内容</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center"><kbd class="pressed">LAlt</kbd>
+                            <span class="key-plus">+</span>
+                            <div class="kbd-wrap"><kbd>X</kbd></div>
+                            <div class="kbd-wrap"><kbd>C</kbd></div>
+                            </td>
+                            <td><code>剪切</code> / <code>复制</code></td>
+                            <td>同上，另一套独立剪贴板</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:center"><kbd class="pressed">LAlt</kbd>
+                        <span class="key-plus">+</span>
+                        <div class="kbd-wrap"><kbd>V</kbd></div>
+                        </td>
+                        <td>粘贴<code>+LAlt+X</code> / <code>+LAlt+C</code>的内容</td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">
+                                <div class="kbd-wrap"><kbd>F1</kbd></div>
+                            </td>
+                            <td>打开本文档页面</td>
+                            <td><br></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">
+                                <div class="kbd-wrap"><kbd>F2</kbd></div>
+                            </td>
+                            <td>弹出计算板窗口</td>
+                            <td>
+                                <ol>
+                                    <li>
+                                        所支持的运算请看<a href="https://capslox.com/capslock-plus/#%E5%85%B3%E4%BA%8E%E8%AE%A1%E7%AE%97%E7%9A%84%E8%AF%A6%E7%BB%86%E8%AF%B4%E6%98%8E">关于计算的详细说明</a>
+                                    </li>
+                                    <li>
+                                        在本界面下，按住<code>Shift</code>（或切换成大写后）：<br>
+                                        <code>u</code><code>i</code><code>o</code><code>p</code><code>[</code><br>
+                                        <code>j</code><code>k</code><code>l</code><code>;</code><code>'</code><br>
+                                        <code>m</code><code>,</code><code>.</code><br>
+                                        <code>Space</code><code>RAlt</code><br>
+                                        将输出：<br>
+                                        <code>7</code><code>8</code><code>9</code><code>*</code><code>/</code><br>
+                                        <code>4</code><code>5</code><code>6</code><code>+</code><code>-</code><br>
+                                        <code>1</code><code>2</code><code>3</code><br>
+                                        <code>0</code><code>.</code>
+                                    </li>
+                                    <li>
+                                        <code>Shift+Enter</code>会（计算完结果后）将结果输出到下一行的开头
+                                    </li>
+                                    <li>
+                                        <code>Ctrl+Enter</code>换行
+                                    </li>
+                                    <li>
+                                        在本界面下，光标左边所有字符都将认定为数学表达式，而不像<code>+Tab</code><sup>[1]</sup>那样自动匹配表达式
+                                    </li>
+                                    <li>
+                                        在本界面下，<code>Enter</code>会计算光标左边的数学表达式并在表达式右边输出<code>=xxx</code>，具体规则和<code>+Tab</code><sup>[1]</sup>的相似，只是所有表达式都会自动补上<code>=</code>号，而不是用结果替换掉表达式。
+                                    </li>
+                                </ol>
+                                <p>
+                                    [1]: <code>+Tab</code>的说明在<a href="https://capslox.com/capslock-plus/#clTabScript" title="TabScript 说明">下面</a>可以看到
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">
+                                <div class="kbd-wrap"><kbd>F3</kbd></div>
+                            </td>
+                            <td>翻译选中的或光标所在的单词</td>
+                            <td>
+                                <ol>
+                                    <li>英语单词可以不用选中，只要输入光标靠着单词</li>
+                                    <li>中文单词不好界定"单词"界限，最好选中后再翻译</li>
+                                    <li>翻译结果框清空内容后重新输入文本，回车可以再次翻译</li>
+                                    <li>在复制不了任何文字的窗口会直接弹出空白翻译框</li>
+                                    <li>获取单词通过发送<code>Ctrl+C</code>实现，需确保<code>+F3</code>按下时<code>Ctrl+C</code>不会有意外操作。详细解释请看<a href="https://capslox.com/capslock-plus/#%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%97%E6%93%8D%E4%BD%9C%E7%9A%84%E6%9C%BA%E5%88%B6" title="关于文字操作的机制">关于文字操作的机制</a></li>
+                                    <li>翻译功能通过调用<a href="http://fanyi.youdao.com/openapi" target="_blank">有道API</a>实现，API接口的请求频率限制为每小时1000次，超过限制会被封禁。也就是说所有使用
+                                        Capslock+
+                                        翻译的人一小时内翻译的次数加起来不能超过1000次。需求较高的话可以自己申请一个Key，然后填入<br><code>CapsLock+settings.ini</code><sup>[1]</sup>-&gt;<code>TTranslate</code>-&gt;<code>apiKey</code>来独享翻译接口，注意同时要填写<code>apiType</code>，因为有道
+                                        api 的 key
+                                        有两种——免费版和收费版，通过上面那个链接进去申请的就是免费版，那应该填写<code>apiType=0</code>，收费版就是<code>apiType=1</code>（收费版是要
+                                        email 他们来申请的）。以及免费版的 key
+                                        会有一个<code>keyFrom</code>参数，也需要在<code>TTranslate</code>下填写好。具体请查看<code>CapsLock+settingsDemo.ini</code><sup>[1]</sup>文件中的说明。
+                                    </li>
+                                    <li>由于 Capslock+ 是单进程的，网络太差的时候使用翻译的话，进程会因为等待数据传送而造成阻塞，也就是 Capslock+
+                                        会假死。如果出现这种情况，稍等就好。另外，不建议网络情况太差的时候使用翻译功能。</li>
+                                </ol>
+                                <p>
+                                    [1]: <code>CapsLock+settings.ini</code>和<code>CapsLock+settingsDemo.ini</code>文件是
+                                    Capslock+ 初次运行时自动生成的文件，要快速打开它们请看下面<code>Qbar</code>的<code>cl set</code>命令说明
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">
+                                <div class="kbd-wrap"><kbd>F4</kbd></div>
+                            </td>
+                            <td>短按，将当前窗口变为半透明 / 不透明；<br>长按，配合<code>鼠标滚轮上  / 下</code>以增加 / 减少窗口透明度</td>
+                            <td>部分窗口无效，例如 QQ</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">
+                                <div class="kbd-wrap"><kbd>F5</kbd></div>
+                            </td>
+                            <td>重载程序</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">
+                                <div class="kbd-wrap"><kbd>F6</kbd></div>
+                            </td>
+                            <td>置顶 / 解除置顶一个窗口</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">
+                                <div class="kbd-wrap"><kbd>F8</kbd></div>
+                            </td>
+                            <td>获取转义后的选中的字符，供调试用</td>
+                            <td>详情看<a href="https://capslox.com/capslock-plus/#tab-js">这里</a>，不熟悉<code>JavaScript</code>的同学可以无视这个功能</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">
+                                <div class="kbd-wrap"><kbd>F12</kbd></div>
+                            </td>
+                            <td>关闭 / 打开独立剪贴板功能</td>
+                            <td>主要给 Excel 里复制时弹窗<code>图片太大，超过部分将被截取。</code>用，关闭了就不会弹窗了。</td>
+                        </tr>
+                        </tbody>
+                        </table>
+            </div>
+            </section>
+
+            <section class="function-section">
+                <h2 id="advancedFunctions" class="funcClass">高级功能</h2>
+                <section class="advanced-section">
+                    <h2 id="clTabScript">TabScript</h2>
+                    <div class="adv-func-key">
+                        <kbd class="pressed">Capslock</kbd><span class="key-plus">+</span>
+                        <div class="kbd-wrap"><kbd>Tab</kbd></div>
+                    </div>
+                    <h3>功能</h3>
+                    <ol class="action-list">
+                        <li>
+                            光标左边的字符串如果在<code>Capslock+settings.ini</code>文件<sup>[1]</sup>中的<code>[TabHotString]</code>，<code>[QRun]</code>或<code>[QWeb]</code>字段下有相应键名，则将其替换成该键名对应的值
+                        </li>
+                        <li>
+                            计算光标左边的数学表达式的值（实际上是运行<code>JavaScript</code>代码）
+                        </li>
+                    </ol>
+                    <h3>说明</h3>
+                    <ul class="introduction-list">
+                        <li>
+                            <strong>关于热字串功能：</strong>
+                            <ol>
+                                <li>
+                                    举个例子，在<code>Capslock+settings.ini</code>文件的<code>[TabHotString]</code>段下有这么一条设置：<code>email=123456789@abc.com</code>，那么在任意能输入文字的地方输入：<code>asdfghjkl<strong>email</strong></code>，按下<code>Capslock+Tab</code>，就会变成<code>asdfghjkl<strong>123456789@abc.com</strong></code>
+                                </li>
+                                <li>
+                                    如果不同字段下有同名的键名，三个标签的优先级是：<br><code>[TabHotString]</code> &gt; <code>[QRun]</code>
+                                    &gt;
+                                    <code>[QWeb]</code><br>例如：<br><code>[TabHotString]</code>段下有设置：<code>a=apple</code><br><code>[QRun]</code>段下有设置：<code>a=e:\banana</code><br>那么输入<code>a</code>后，<code>Capslock+Tab</code>将得到<code>apple</code>（而不是<code>e:\banana</code>）<br>（虽然理论上不同段名下的键名可以同名，但<code>[QRun]</code>和<code>[QWeb]</code>下的键名不应重名，否则在使用<code>+Q</code>功能时会有问题）
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <strong>关于计算功能：</strong>
+                            <ol>
+                                <li>
+                                    支持较复杂的数学表达式：多种进制的数值，任意数量嵌套的括号，三元运算，关系运算，逻辑运算，位运算，算术运算，各种函数等。<br>
+                                    详细看下面的<a href="https://capslox.com/capslock-plus/#%E5%85%B3%E4%BA%8E%E8%AE%A1%E7%AE%97%E7%9A%84%E8%AF%A6%E7%BB%86%E8%AF%B4%E6%98%8E">关于计算的详细说明</a>
+                                </li>
+                                <li>
+                                    当数学表达式最后不带<code>=</code>号时，计算结果会替换掉表达式。例如：<code>1+2+3</code>-&gt;<code>Capslock+Tab</code>-&gt;<code>6</code>
+                                </li>
+                                <li>
+                                    当数学表达式最后带有<code>=</code>号时，计算结果输出到等号右边。例如：<code>1+2+3=</code>-&gt;<code>Capslock+Tab</code>-&gt;<code>1+2+3=6</code>
+                                </li>
+                                <li>
+                                    当计算不出结果，会输出一个<code>?</code>号。例如：<code>1+2+=</code>-&gt;<code>Capslock+Tab</code>-&gt;<code>1+2+=?</code>
+                                </li>
+                                <li>
+                                    从光标向左，直到遇到第一个空格符或行首，之间的字符串将认定为是表达式，如果需要计算的表达式带有空格，请选中该表达式，或在表达式开头加上<code>`</code>（反引号），例如：<code>`1 + 1 = </code>，<strong>选中的或反引号右边的所有字符都将被判定为表达式</strong>。<br>超过一行的表达式只能先选中它们，例如：<br>
+<p></p><pre>a=1;
+b=2;
+c=3;
+a+b+c=
+</pre><p></p>
+                                </li>
+                            </ol>
+                            <strong>* Capslock+ 不保证计算结果绝对正确。对于要求比较严格的计算中（例如金钱的计算），请谨慎使用计算功能！</strong>
+
+                            <ol style="margin-top:2rem" id="tab-js">
+                                <strong>对于熟悉<code>JavaScript</code>的同学：</strong>
+                                <li>
+                                    其实所谓的计算数学表达式，只是在运行 JavaScript 代码。例如你可以这样：<br>
+                                    输入<code>`var i=0,j=101; while(j--)i+=j;</code>，然后<code>Capslock+Tab</code>来求1~100的和。
+                                </li>
+                                <li>
+                                    Capslock+ 还允许这样来调用函数：
+<p></p><pre>any text any text
+any text any text
+.functionX()
+</pre><p></p>
+                                    这样调用函数，其实就是把除了写在最后一行的函数以外的所有其他字符处理成单行字符串后，再调用后面的方法。而处理过程实际上是：在<code>'</code><code>"</code><code>&amp;</code><code>\</code><code>\n</code><code>\r</code><code>\t</code><code>\b</code><code>\f</code>这些符号前添加转义符<code>\</code>，然后再将每个换行符都替换成<code>\n</code>。
+                                    <p>所以选中以上3行后<code>Capslock+Tab</code>，相当于执行：</p>
+<p></p><pre>'any text any text\nany text any text'.functionX()
+</pre><p></p>
+                                    例如，对于以下一段：
+<p></p><pre>apple banana apple cat
+apple dog apple banana
+apple cat apple dog
+.replace(/apple/g, 'egg') //将所有'apple'换成'egg'
+</pre><p></p>
+                                    选中以上4行，<code>Capslock+Tab</code>后，内容将变为：
+<p></p><pre>egg banana egg cat
+egg dog egg banana
+egg cat egg dog
+</pre><p></p>
+                                </li>
+                                <li>
+                                    可以在 Capslock+
+                                    目录下的<code>loadScript</code>文件夹添加<code>js</code>文件，并在<code>CapsLock+settings.ini</code>的<code>Global</code>字段下的<code>loadScript</code>键设置需要需要自动加载的<code>js</code>文件的文件名（以<code>,</code>隔开）。Capslock+
+                                    会在启动时按设置的顺序加载文件，从而扩展<code>Capslock+Tab</code>功能。自己的函数不要直接写在<code>scriptDemo.js</code>里，版本更新的话会被覆盖的。
+                                </li>
+                                <li>
+                                    因为上面那种调用函数的方法，实际上会把除了最后一行函数以外的其他字符经过转义，变成单行字符串（看上面第 2
+                                    条），那么你如果想自己编写函数来处理字符的话，你的函数必须是针对这样的格式的字符串进行操作的。在自动生成的<code>loadScript</code>文件夹下的<code>scriptDemo.js</code>里面有函数例子，你可以用来参考。另外你可以选中一段文字，再按下<code>Capslock+F8</code>来获取调试用的字符串，它会给你一行由那一段字符转义得到的字符串。你可以把你的<code>js</code>文件引入到一个<code>html</code>文件，然后用浏览器打开那个<code>html</code>文件，然后就可以在控制台用刚才拿到的字符串调试你的函数了。
+                                </li>
+                                <li>
+                                    调用 js 的功能是调用了 IE 引擎来实现的，所以你的代码需要根据你系统上的 IE
+                                    引擎版本来躲坑。可以用<code>navigator.userAgent</code>-&gt;<code>Capslock+Tab</code>来看具体版本。
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <strong>综上，<code>+Tab</code>对各种形式的字符生效的优先级从高到低排列如下：</strong>
+                            <ol>
+                                <li>
+                                    选中字符的情况下：
+                                    <ol>
+                                        <li>多行，并且最后一行格式为<code>.xxx()</code>的字符 --<code>JavaScript</code></li>
+                                        <li>其他情况 --<code>JavaScript</code></li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    未选中字符情况下：
+                                    <ol>
+                                        <li>光标左边有匹配<code>[TabHotString]</code>，<code>[QRun]</code>或<code>[QWeb]</code>的字符
+                                            --<code>HotString</code></li>
+                                        <li>从行首开始第一个<code>`</code>符号至光标之间的字符 --<code>JavaScript</code></li>
+                                        <li>从光标向左直到遇到第一个空格或行首，之间的字符 --<code>JavaScript</code></li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <p>
+                        [1]: <code>CapsLock+settings.ini</code>文件是 Capslock+
+                        初次运行时自动生成的文件，要快速打开它请看下面<code>Qbar</code>的<code>cl set</code>命令说明
+                    </p>
+                </section>
+
+
+                <section class="advanced-section">
+                    <h2 id="clWinBind">WinBind</h2>
+                    <div class="adv-func-key">
+                        <kbd class="pressed">Capslock</kbd><span class="key-plus">+</span>
+                        <div class="kbd-wrap"><kbd>Win</kbd></div><span class="key-plus">+</span>
+                        <div class="kbd-wrap"><kbd>0~9</kbd></div>
+                        <p>或</p>
+                        <kbd class="pressed">Capslock</kbd><span class="key-plus">+</span>
+                        <div class="kbd-wrap"><kbd>LAlt</kbd></div><span class="key-plus">+</span>
+                        <div class="kbd-wrap"><kbd>0~9</kbd></div>
+                    </div>
+                    <h3>功能</h3>
+                    <ol class="action-list">
+                        <li style="list-style:none">
+                            绑定窗口到相应按键：
+                            <ul>
+                                <li>模式1： 单击，绑定当前激活的窗口到相应按键</li>
+                                <li>模式2： 双击，追加绑定当前激活的窗口到相应按键</li>
+                                <li>模式3： 三击，绑定当前激活的窗口所属程序所拥有的所有窗口到相应按键</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <div class="adv-func-key">
+                        <kbd class="pressed">Capslock</kbd><span class="key-plus">+</span>
+                        <div class="kbd-wrap"><kbd>0~9</kbd></div>
+                    </div>
+                    <h3>功能</h3>
+                    <ol class="action-list">
+                        <li style="list-style:none"><code>激活</code>/<code>最小化</code>绑定在该按键的窗口</li>
+                    </ol>
+                    <h3>说明</h3>
+                    <ul class="introduction-list">
+                        <li>
+                            <strong>关于绑定：</strong>
+                            <ol>
+                                <li>模式1和模式3会覆盖当前按键上已有的绑定窗口</li>
+                                <li>
+                                    模式2绑定在按键现有模式是模式1或模式2时会追加窗口，是模式3时不追加，而会覆盖原绑定设置，绑定当前激活窗口（与模式1效果一样）
+                                </li>
+                                <li>模式2操作示例：
+                                    <ol>
+                                        <li>
+                                            激活窗口A（鼠标点击一下是方法之一），依次按下<code>Capslock</code><code>Alt</code>不放，再按两次<code>1</code>；
+                                        </li>
+                                        <li>
+                                            激活窗口B，同样操作；
+                                        </li>
+                                        <li>
+                                            激活窗口C，同样操作；
+                                        </li>
+                                        <li>
+                                            按下<code>Capslock</code>不放，（多次）按下<code>1</code>来在A,B,C三个窗口之间实现类似<code>Alt+Tab</code>的窗口切换。
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    模式2绑定的窗口被关闭至只剩下1个时，将自动转换成模式1绑定（可以激活 / 最小化窗口）
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <strong>关于窗口激活 / 最小化：</strong>
+                            <ol>
+                                <li>
+                                    模式1下，在原窗口不存在时，激活动作会自动绑定窗口所属程序的另一个窗口
+                                </li>
+                                <li>
+                                    模式1和模式3下，在原绑定窗口所属程序未启动时，激活动作将启动该程序
+                                </li>
+                                <li>
+                                    绑定的窗口只有一个时，所有模式都将激活 / 最小化该窗口
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="advanced-section">
+                    <h2 id="clQbar">Qbar</h2>
+                    <div class="adv-func-key">
+                        <kbd class="pressed">Capslock</kbd><span class="key-plus">+</span>
+                        <div class="kbd-wrap"><kbd>Q</kbd></div>
+                    </div>
+                    <h3>功能</h3>
+                    <ol class="action-list">
+                        <li style="list-style:none">
+                            弹出输入框，输入不同命令执行不同操作（见下面的<code>cl</code> <code>set</code>等）
+                        </li>
+                    </ol>
+                    <h3>说明</h3>
+                    <ol class="introduction-list">
+                        <li>
+                            按下<code>ESC</code>键或失去焦点后将关闭界面
+                        </li>
+                        <li>
+                            选中字符再按下<code>+Q</code>可以将其填入输入框
+                        </li>
+                        <li>
+                            选中文件再按下<code>+Q</code>，它的路径会填入输入框
+                        </li>
+                    </ol>
+                    <h3>命令</h3>
+                    <div class="tableWrap">
+                        <table class="funcTable">
+                            <thead>
+                                <tr>
+                                    <th>命令</th>
+                                    <th>功能</th>
+                                    <th>说明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="text-align:center"><code>cl about</code></td>
+                                    <td>查看版本信息</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center"><code>cl set</code></td>
+                                    <td>打开<code>Capslock+settings.ini</code>文件和<code>Capslock+settingsDemo.ini</code>文件
+                                    </td>
+                                    <td>
+                                        <p><code>Capslock+settings.ini</code>各字段作用：</p>
+                                        <ul>
+                                            <li>
+                                                <code>Global</code>：全局设置
+                                            </li>
+                                            <li>
+                                                <code>QSearch</code>：设置搜索命令
+                                            </li>
+                                            <li>
+                                                <code>QWeb</code>：设置打开网页
+                                            </li>
+                                            <li>
+                                                <code>QRun</code>：设置启动程序
+                                            </li>
+                                            <li>
+                                                <code>QStyle</code>：设置<code>+Q</code>输入框的样式
+                                            </li>
+                                            <li>
+                                                <code>TabHotString</code>：设置<code>+Tab</code>热字串
+                                            </li>
+                                            <li>
+                                                *更具体的说明请查看<code>CapsLock+settingsDemo.ini</code>文件
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center"><code>ooo -&gt; xxx</code></td>
+                                    <td>
+                                        在<code>Capslock+settings.ini</code>以下的某字段添加一行：<br>
+                                        <code>ooo=xxx</code>
+                                        <ol>
+                                            <li>如果是搜索网址：<br><code>[QSearch]</code></li>
+                                            <li>如果是文件路径：<br><code>[QRun]</code></li>
+                                            <li>如果是网址<sup>[1]</sup>：<br><code>[QWeb]</code></li>
+                                            <li>都不是：<br><code>[TabHotString]</code></li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                例如输入<code>mdn -&gt; developer.mozilla.org</code>，记录完成后就可以在<code>+Q</code>输入<code>mdn</code>来打开<code>developer.mozilla.org</code>
+                                            </li>
+                                            <li>
+                                                如果文件是快捷方式，会自动找到快捷方式所指向的文件的路径来记录
+                                            </li>
+                                            <li>
+                                                如果所记录的字符串格式类似文件路径或者网址<sup>[1]</sup>，例如<code>com.com.com</code>，就会被记录到<code>QWeb</code>，要将这类字符串记录到<code>[TabHotString]</code>，可以用<code>-&gt;string</code>命令，它会把字符串记录到<code>TabHotString</code>；
+                                                同样，<code>-&gt;search</code>会记录到<code>QSearch</code>；<code>-&gt;run</code>会记录到<code>QRun</code>；<code>-&gt;web</code>会记录到<code>QWeb</code>。
+                                            </li>
+                                        </ol>
+                                        <p>
+                                            *更具体的说明请查看<code>CapsLock+settingsDemo.ini</code>文件
+                                        </p>
+                                        <p>
+                                            [1]:
+                                            只有以<code>http://</code>或<code>https://</code>或<code>www.</code>开头，或者包含<code>.com</code>或<code>.net</code>或<code>.org</code>的字符串才会被认为是网址
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center">
+                                        <ul class="no-dot">
+                                            <li>
+                                                <code>ooo -&gt;search xxx</code>
+                                            </li>
+                                            <li>
+                                                <code>ooo -&gt;run xxx</code>
+                                            </li>
+                                            <li>
+                                                <code>ooo -&gt;web xxx</code>
+                                            </li>
+                                            <li>
+                                                <code>ooo -&gt;str xxx</code>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>在Capslock+settings.ini下的<code>[QSearch]</code> / <code>[QRun]</code> /
+                                        <code>[QWeb]</code> /
+                                        <code>[TabHotString]</code>字段添加一行：<br><code>ooo=xxx</code></td>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                记录完成后可以在<code>+Q</code>输入<code>ooo</code>来搜索 /
+                                                打开路径为<code>xxx</code>的文件（夹） / 网址 / 使用<code>+Tab</code>的热字串功能
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            *更具体的说明请查看<code>CapsLock+settingsDemo.ini</code>文件
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center">
+                                        <ul><code>web xxx</code></ul>
+                                    </td>
+                                    <td>打开xxx网址</td>
+                                    <td>如果<code>xxx</code>以<code>http://</code>或<code>https://</code>或<code>www.</code>开头，或者包含<code>.com</code>或<code>.net</code>或<code>.org</code>，<code>web</code>命令可以省略。例如：<code>google.com</code>
+                                </td></tr>
+                                <tr>
+                                    <td style="text-align:center">
+                                        <ul class="no-dot">
+                                            <li><code>s xxx</code></li>
+                                            <li><code>bd xxx</code></li>
+                                        </ul>
+                                    </td>
+                                    <td>百度搜索<code>xxx</code></td>
+                                    <td>
+                                        <ol>
+                                            <li>
+                                                百度是默认搜索引擎，即可以省略命令直接输入关键词进行搜索，除非关键词中包含其他的命令关键词
+                                            </li>
+                                            <li>
+                                                可以在<code>Capslock+settings.ini</code>文件中修改默认搜索引擎，以及修改或添加搜索命令以支持其他搜索引擎。
+                                            </li>
+                                        </ol>
+                                        <p>
+                                            * 更具体的说明请查看<code>CapsLock+settingsDemo.ini</code>文件
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center">
+                                        <ul class="no-dot">
+                                            <li><code>g xxx</code></li>
+                                            <li><code>gg xxx</code></li>
+                                        </ul>
+                                    </td>
+                                    <td>谷歌搜索<code>xxx</code></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center"><code>m xxx</code></td>
+                                    <td>MDN搜索<code>xxx</code></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center"><code>wk xxx</code></td>
+                                    <td>维基搜索<code>xxx</code></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center"><code>tb xxx</code></td>
+                                    <td>淘宝搜索<code>xxx</code></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center"><code>aa bb</code></td>
+                                    <td>用<code>aa</code>打开<code>bb</code></td>
+                                    <td>
+                                        <p><code>aa</code>：<code>[QRun]</code>上有记录的一个程序</p>
+                                        <p><code>bb</code>：<code>[QRun] / [QWeb]</code>上有记录的一个文件（夹） / 网址简写，或具体的文件（夹）路径 /
+                                            网址</p>
+                                        <p>例如：<br><code>[Qrun]</code>下记录了<code>ie=C:\Program Files\Internet Explorer\iexplore.exe</code><br><code>[QWeb]</code>记录了<code>clp=http://cjkis.me/capslock+/</code><br>那<code>ie clp</code>就可以用<code>ie</code>来打开<code>http://cjkis.me/capslock+/</code><br>也可以直接<code>ie cjkis.me/capslock+</code>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center"><code>xxx</code></td>
+                                    <td colspan="2">
+                                        <ol>
+                                            <li>
+                                                如果<code>[QRun]</code>或<code>[QWeb]</code>内有记录则运行对应文件或打开对应网址
+                                            </li>
+                                            <li>
+                                                如果是文件（夹）路径，打开该文件（夹）
+                                            </li>
+                                            <li>
+                                                如果是网址<sup>[1]</sup>，打开该网址
+                                            </li>
+                                            <li>
+                                                不是以上情况的话，百度<sup>[2]</sup>
+                                            </li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <ol>
+                                            <li>
+                                                能根据输入，展示<code>[QRun]</code>和<code>[QWeb]</code>的记录，或输入的路径下的文件（夹）<sup>[3]</sup>
+                                            </li>
+                                            <li>
+                                                可以使用通配符<code>?</code>和<code>*</code>来匹配任意一个 / 多个字符，例如：<br>
+                                                <code>?at</code>可以匹配 <code>bat</code>, <code>cat</code>, <code>fat</code>...<br>
+                                                <code>g*d</code>可以匹配 <code>god</code>, <code>good</code>, <code>gold</code>...
+                                            </li>
+                                            <li>
+                                                无提示列表的情况下<code>Tab</code>展开提示列表（如果<code>QRun</code>或<code>QWeb</code>有记录的话）
+                                            </li>
+                                            <li>
+                                                有提示列表的情况下，如果有选中某文件名，<code>Tab</code>可以将选中的文件名放到输入框，否则，会将第一个文件名放到输入框
+                                            </li>
+                                            <li>
+                                                在展示路径下的文件时，<code>\</code>键（或<code>/</code><sup>[4]</sup>）可以将文件（夹）名填入输入框，<code>Capslock+-</code>可以回到上级目录，<code>Capslock+=</code>可以前进到下一层目录
+                                            </li>
+                                            <li>
+                                                如果要搜索类似网址的关键字，请带上搜索命令，如<code>s com.com</code>，否则将被当成网址打开
+                                            </li>
+                                            <li class="whats-new">
+                                                <code>Capslock+settings.ini</code>中，提供给<code>Qbar</code>使用的段名<code>[QSearch],[QRun],[QWeb]</code>，支持在键名后加上<code>&lt;xxx&gt;</code>来作为提示，它们不会影响命令的使用。例如：<br>
+                                                <code>[QWeb]</code>下有<code>cx  &lt;capslox&gt;=capslox.com</code>，那么<code>QBar</code>下输入<code>cx</code>打开<code>capslox.com</code>
+                                            </li>
+                                            <li>
+                                                <code>[QRun]</code>下需要为程序添加启动参数或以管理员权限打开的话，程序路径要用引号引起来，然后在这部分的左边加上<code>*RunAs</code>以管理员权限打开，在这部分的右边加上启动参数。例如：<br>
+                                                <code>ie=*RunAs "C:\Program Files\Internet Explorer\iexplore.exe" -k</code><br>
+                                                *具体参照<code>Capslock+SettingsDemo.ini</code>
+                                            </li>
+                                            <li>
+                                                <code>Ctrl+Enter</code>会在输入的字符串前后加上<code>www.</code><code>.com</code>，并当成网址打开。例如：<br>输入<code>capslox</code>-&gt;<code>Ctrl+Enter</code>-&gt;打开<code>www.capslox.com</code>
+                                            </li>
+                                            <li>
+                                                Qbar 支持搜索全部已安装程序，如果在启动 Capslock+ 后有安装 / 卸载程序，需要重载 Capslock+ 。
+                                            </li>
+                                        </ol>
+                                        <p>
+                                            [1]:
+                                            只有以<code>http://</code>或<code>https://</code>或<code>www.</code>开头，或者包含<code>.com</code>或<code>.net</code>或<code>.org</code>的字符串才会被认为是网址。否则，请在网址前面加上命令<code>web</code>。
+                                        </p>
+                                        <p>
+                                            [2]:
+                                            通过修改<code>Capslock+settings.ini</code>文件下，<code>[QSearch]</code>段的<code>default</code>可以设置默认搜索
+                                        </p>
+                                        <p>
+                                            [3]:
+                                            在展示输入的路径下的文件时，为了保证加载速度，在文件过多的时候，会放弃加载部分文件的图标，直接使用一个<code>空白文件</code>样式的图标
+                                        </p>
+                                        <p>
+                                            [4]:
+                                            <code>\</code>键在文件路径输入时会频繁使用，而<code>\</code>键实在太远了，所以特地让<code>/</code>键也实现和<code>\</code>键一样的功能，如果需要输出<code>/</code>符号可以用<code>Capslock+/</code>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </section>
+
+            <hr>
+            <h1 id="补充说明"><i class="fa fa-paperclip"></i>补充说明</h1>
+
+            <h2 id="关于文字操作的机制">关于文字操作的机制</h2>
+            <p>
+                Capslock+ 不少功能是根据不同文字内容做不同操作的，例如选中文字自动填入 Qbar、翻译、TabScript
+                的字符替换、数学表达式计算等。这些功能都是通过发送一个<code>Ctrl+C</code>来获取文字，再对文字进行操作的。
+                因为这个原因，<strong>在使用这些功能时需要注意<code>Ctrl+C</code>会不会引起意外的操作，例如在命令行下这个组合键通常是退出操作。</strong>
+            </p>
+            <p>
+                在很多编程工具下，<code>Ctrl+C</code>会在未选中任何文本时复制光标所在行整行文本，这样就会造成在这些界面下无法准确判断用户到底有没选中文本。
+                现在对于这个问题的解决办法是通过判定复制到的文本最后是不是换行符来判断获取到的文本是不是这些软件自带的复制功能复制到的。
+                这个方法暂时只发现在某些带有这个功能的界面的最后一行下会有问题，因为是最后一行，所以文本最后可能不带换行符，这时如果未选中文字使用了相关功能，就会被判定为选中了整行文字，而按选中文字的情况作出相应的操作。
+                对于这种情况，只要不在最后一行编辑——回车一下，再回到上面编辑文本即可。
+            </p>
+            <h2 id="关于计算的详细说明">关于计算的详细说明</h2>
+            <ul>
+                <li>
+                    Capslock+F2 和 Capslock+Tab
+                    的计算功能支持使用函数（也叫方法）帮助计算。函数就是类似<code>functionxxx()</code>这样格式的东西，使用函数只要把需要计算的数值写在括号里，多个数值之间用逗号隔开。例如，使用average()函数来求平均值：<code>average(1,3,5,7,12,32)</code>
+                </li>
+                <li>
+                    支持的常量和函数：<a href="http://www.w3school.com.cn/jsref/jsref_obj_math.asp" title="JavaScript Math 对象" target="_blank">JavaScript Math 对象</a>
+                </li>
+                <li>
+                    除了上面页面中列出的函数外，还支持以下函数：
+                    <table style="width:100%;margin:0;">
+                        <tbody><tr>
+                            <th>函数</th>
+                            <th>描述</th>
+                        </tr>
+                        <tr>
+                            <td>average(a,b,c...)</td>
+                            <td>计算 a,b,c... 的平均值</td>
+                        </tr>
+                        <tr>
+                            <td>variance(a,b,c...)</td>
+                            <td>计算 a,b,c... 的方差</td>
+                        </tr>
+                        <tr>
+                            <td>spVariance(a,b,c...)</td>
+                            <td>计算 a,b,c... 的样本方差</td>
+                        </tr>
+                    </tbody></table>
+                    *如果你有需要用到的公式想添加到 Capslock+，可以用 JavaScript
+                    写好，放到<code>loadScript</code>文件夹中，并在<code>CapsLock+settings.ini</code>-&gt;<code>Global</code>-&gt;<code>loadScript</code>中设置，这样
+                    Capslock+ 在启动时就会加载该 js 文件，来添加你编写的函数。也可以<a href="https://capslox.com/capslock-plus/#%E8%81%94%E7%B3%BB%E6%88%91">联系我</a>，可行的话我会添加到 Capslock+。
+                </li>
+                <li>
+                    支持的数值：<a href="http://www.w3school.com.cn/js/js_obj_number.asp" title="JavaScript Number 对象" target="_blank">JavaScript Number 对象</a>
+                </li>
+                <li>
+                    支持的运算符：<a href="http://www.w3school.com.cn/js/js_operators.asp" title="JavaScript 运算符" target="_blank">JavaScript 运算符</a>
+                </li>
+                <li>
+                    支持的比较和逻辑运算符：<a href="http://www.w3school.com.cn/js/js_comparisons.asp" title="JavaScript 比较和逻辑运算符" target="_blank">JavaScript 比较和逻辑运算符</a>
+                </li>
+                <li>
+                    想了解更多你需要学习 JavaScript：<a href="http://www.w3school.com.cn/js/index.asp" title="JavaScript 教程" target="_blank">JavaScript 教程</a>
+                </li>
+                <li>
+                    例子：（在这里试试<code>Capslock+Tab</code>？）<br>
+                    <textarea id="expArea" rows="41">//1     ;**这里是答案和说明，将光标放在下面一行表达式的最右边，按下 Capslock+Tab 来计算。后面不再说明。**
+((1+2)*3-4)/5
+
+//18    ;十六进制，位移运算
+0x0e+(1&lt;&lt;2)=
+
+//100011    ;十进制转二进制
+(35).toString(2)
+
+//false     ;比较和逻辑运算
+`9&lt;1 &amp;&amp; 2&gt;1=
+
+//56.548667764616276    ;圆周率常量pi
+2*pi*9
+
+//4     ;三元运算
+1&gt;2?3:4=
+
+//5     ;函数
+max(1,abs(-2),sqrt(9),pow(2,2),round(4.5))
+
+//120   ;计算5的阶乘
+`(function(x){return x&lt;=1?1:x*arguments.callee(x-1)})(5)=
+
+//7     ;定义函数，下面的4行需要选中后再按 Capslock+Tab
+function add(x,y){
+    return x+y;
+}
+add(3,4)=
+
+//输出7行文字   ;不限于数学计算。同样，要选中下面7行文字后再按 Capslock+Tab
+(function(){
+    var arr=[];
+    for(var i=1;i&lt;8;i++){
+        arr.push('say hello ' + i + ' times.');
+    }
+    return arr.join('\n');
+})()
+                    </textarea>
+                </li>
+                <li id="aboutFloorCalculate">
+                    因为计算的功能实际上是用了 JavaScript 引擎来运算，而在 JavaScript
+                    里，小数的运算可能会有一些偏差，例如：<code>0.1+0.2=0.30000000000000004</code>。
+                    对于这个问题，Capslock+ 在 Capslock+F2 的计算板和 Capslock+Tab 功能中，虽然用了一些方法去解决了这个问题。
+                    <strong>但是 Capslock+ 仍然不保证计算功能可以能得到一个绝对正确的结果，在使用计算功能的时候需要慎重，并自行承担后果。
+                    </strong>对于这个问题，更详细的说明请看<a href="http://cjkis.me/2016/floating-point-calculation-in-javascript/" target="_blank">这里</a>。
+                </li>
+            </ul>
+            <hr>
+            <h1 id="联系我"><i class="fa fa-envelope-o"></i>联系我</h1>
+            <p>
+                如果发现 bug 或者有新想法或者觉得文档哪里写得太烂等等，欢迎通过发送邮件到
+                <code><script>document.write("c1a2p3s4l5o6c7k8-9p0l1u2s3@4c5j6k7i8s9.0m1e".replace(/\d/g, ''));</script>capslock-plus@cjkis.me</code>。
+            </p>
+
+            <hr>
+
+            <!-- mark: release notes -->
+            <h1 id="版本历史"><i class="fa fa-list"></i>版本历史</h1>
+            <div class="change-log">
+                <div class="new-version">
+                    <ul>
+                        <li>
+                            <p><strong>v3.2.0 | 2020-10-24</strong>
+                                </p><ul>
+                                    <li>
+                                        修改：有的同学不能用 <code>Caps Lock + Win + Number keys</code> 绑定窗口，现在 <code>Caps Lock + LAlt + Number keys</code> 也可以绑定窗口了。
+                                    </li>
+                                    <li>
+                                        修改：Bugs 修复和优化。
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <p><strong>v3.1.0 | 2020-04-25</strong>
+                                </p><ul>
+                                    <li>
+                                        下载：<a href="https://dl.capslox.com/capslock-plus/Capslock%2B_v3.1.0.exe" download="Capslock+_v3.1.0.exe" target="_blank" rel="external">Capslock+_v3.1.0.exe (1.20 MB)</a>
+                                    </li>
+                                    <li>
+                                        修改：默认按下 Caps Lock 的动作修改为切换大小写。如果需要修改按键动作，可以在 <code>CapsLock+settings.ini</code> 下的
+                                        <code>[Keys]</code> 下添加设置，例如：<code>press_caps=keyFunc_esc</code>，按下 Caps Lock 发送 Esc。
+                                    </li>
+                                    <li>修改：对于 Qbar，在激活状态再次按下激活热键以隐藏；修复一些 bug</li>
+                                </ul>
+                        </li>
+                        <li>
+                            <p><strong>v3.0.0 | 2020-04-05</strong>
+                                </p><ul>
+                                    <li>
+                                        下载：<a href="https://dl.capslox.com/capslock-plus/Capslock%2B_v3.0.0.exe" download="Capslock+_v3.0.0.exe" target="_blank" rel="external">Capslock+_v3.0.0.exe (1.20 MB)</a>
+                                    </li>
+                                    <li>修改：新的键盘布局，更顺手、更易于上手</li>
+                                </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.8.0 | 2020-04-05</strong></p>
+                            <ul>
+                                <li>下载：<a href="https://dl.capslox.com/capslock-plus/Capslock%2B_v2.8.0.exe" download="Capslock+_v2.8.0.exe" target="_blank" rel="external">Capslock+_v2.8.0.exe (1.18 MB)</a></li>
+                                <li>添加：可设置短按 Caps Lock 键触发的行为</li>
+                                <li>添加：添加多个可选文本操作行为：移动至页首、选中当前单词、删除至页尾，等</li>
+                                <li>修改：QBar 失去焦点时关闭</li>
+                                <li>修改：QBar 下拉菜单有选中项时，回车打开</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.7.0 | 2016-11-30</strong></p>
+                            <ul>
+                                <li>下载：<a href="https://cjkis.me/assets/hexo/Capslock+_v2.7.0.1.exe" download="Capslock+_v2.7.0.1.exe" target="_blank" rel="external">Capslock+_v2.7.0.1.exe (933kb)</a></li>
+                                <li>添加：winjump 系列功能 <a href="https://capslox.com/capslock-plus/what-is-the-use-of-capslock-plus/#WinJump" target="_blank">（有什么用？）</a>
+                                    <ul>
+                                        <li>添加：<code>Capslock+LAlt+E / D / S / F / A / G / Q</code> -&gt; 激活位于当前窗口 上面 / 下面
+                                            / 左边 / 右边 / 最左边 / 最右边 / 中间 的窗口</li>
+                                        <li>添加：<code>Capslock+LAlt+Z</code> -&gt; 将当前窗口压到最下层</li>
+                                    </ul>
+                                </li>
+                                <li>添加：<code>Capslock+LAlt+J / K</code> -&gt; 最小化当前窗口并压入窗口栈最后 / 最前</li>
+                                <li>添加：<code>Capslock+LAlt+L</code> -&gt; 推出窗口栈最后一项，并激活对应窗口</li>
+                                <li>添加：<code>Capslock+LAlt+H</code> -&gt; 清空窗口栈中所有内容</li>
+                                <li>
+                                    添加：<code>Capslock+F4</code> -&gt; 短按，将当前窗口变为半透明 / 不透明；长按，配合<code>鼠标滚轮上  / 下</code>以增加 /
+                                    减少窗口透明度（部分窗口无效，例如 QQ）
+                                    <a href="https://capslox.com/capslock-plus/what-is-the-use-of-capslock-plus/#%E7%AA%97%E5%8F%A3%E7%BD%AE%E9%A1%B6%E5%92%8C%E7%AA%97%E5%8F%A3%E9%80%8F%E6%98%8E" target="_blank">（有什么用？）</a>
+                                </li>
+                                <li>修改：原<code>Capslock+F4</code>窗口置顶放到<code>Capslock+F6</code></li>
+                                <li>修改：修改部分按键功能函数的名称，以支持传入参数。所以如果在之前版本中在 <code>Capslock+settings.ini [keys]</code>
+                                    有设置按键的话，很可能已经失效，需要对照 <code>Capslock+settingsDemo.ini</code> 重新修改设置</li>
+                                <li>修改：按键修改
+                                    <ul>
+                                        <li>修改：<code>Capslock+LAlt+A / G</code>原功能<code>光标跳至页首 / 页尾</code>放到了<code>Capslock+LAlt+- / =</code>
+                                        </li>
+                                        <li>删除：<code>Capslock+LAlt+- / =</code>原功能<code>页面上移 / 下移一页（光标不动）</code>删除</li>
+                                        <li>修改：<code>Capslock+LAlt+E / D</code>原功能<code>页面向上 / 下移动 5 行（光标不动）</code>放到了<code>Capslock+LAlt+Y / B</code>
+                                        </li>
+                                        <li>修改：<code>Capslock+LAlt+S / F</code>原功能<code>切换到前 / 后标签</code>放到了<code>Capslock+LAlt+W / R</code>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>修改：<code>Capslock+LAlt+Tab</code>的使用计算功能时，浮点数运算改为和计算板的一致，修复<code>0.1+0.2=0.30000000000000004</code>类似的问题，具体可以看<a href="https://capslox.com/capslock-plus/#aboutFloorCalculate">关于浮点计算的说明</a></li>
+                                <li>删除：<code>Capslock+LAlt+uiojklm,.;'p[</code>一堆数字和运算符输出（如果需要可以自己在
+                                    Capslock+settings.ini [keys] 中设置 keyFunc_sendChar(1) 等）</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.6.0 | 2016-6-30</strong></p>
+                            <ul>
+                                <li>下载：<a href="https://cjkis.me/assets/hexo/Capslock+_v2.6.0.5.exe" download="Capslock+_v2.6.0.5.exe" target="_blank" rel="external">Capslock+_v2.6.0.5.exe (916kb)</a></li>
+                                <li>
+                                    <p><strong>v2.6.0.5 | 2016-7-7</strong>
+                                </p></li>
+                                <ul>
+                                    <li>修改：修复<code>[QStyle]</code>设置项无效的问题</li>
+                                </ul>
+                                <li>
+                                    <p><strong>v2.6.0.4 | 2016-7-5</strong>
+                                </p></li>
+                                <ul>
+                                    <li>修改：修复<code>allowClipboard</code>没有设置时，修改<code>sets.ini</code>会导致独立剪贴板功能关闭的问题
+                                    </li>
+                                </ul>
+                                <li>添加：按键功能设置，设置写到<code>Capslock+settings.ini</code>的<code>[Keys]</code>下，具体看<code>Capslock+settingsDemo.ini</code>
+                                </li>
+                                <li>添加：Qbar 添加所有已安装程序搜索</li>
+                                <li>添加：Qbar 添加快速搜索提示</li>
+                                <li>添加：Qbar
+                                    支持在简写到<code>[QSearch],[QRun],[QWeb]</code>时，在简写后面跟上<code>&lt;xxx&gt;</code>来备注提醒
+                                </li>
+                                <li>添加：<code>[QRun]</code>支持添加启动程序时的参数，以及是否用管理员权限启动，具体看<code>Capslock+settingsDemo.ini</code>
+                                </li>
+                                <li>添加：Qbar 支持用简写到<code>[QRun]</code>的程序来打开其他文件（夹） / 网址 等（文件（夹） / 网址也可以用简写代替）</li>
+                                <li>添加：Qbar 支持打开 ftp 地址（简写写到<code>[QRun]</code>中）</li>
+                                <li>添加：Qbar
+                                    下<code>Ctrl+Enter</code>打开<code>www.xxx.com</code>，例如：输入<code>baidu</code>，<code>Ctrl+Enter</code>，打开<code>www.baidu.com</code>
+                                </li>
+                                <li>添加：Qbar 的<code>-&gt;</code>命令添加识别<code>QSearch</code>的快速添加设置</li>
+                                <li>修改：Qbar 浏览文件夹时<code>Capslock+B</code>返回上一层目录，改为向下 5 行</li>
+                                <li>添加：Qbar 浏览文件夹时<code>Capslock+,</code>返回上一层目录，<code>Capslock+.</code>前进到下一层目录</li>
+                                <li>添加：<code>scriptDemo.js</code>添加了日期 /
+                                    时间获取函数，所以<code>TabScript</code>现在可以直接用<code>date()</code> / <code>time()</code> /
+                                    <code>dateTime()</code> 获取当前 <code>日期</code> / <code>时间</code> / <code>日期时间</code>
+                                </li>
+                                <li>添加：<code>Capslock+F4</code>使窗口保持在最顶层</li>
+                                <li>添加：程序启动时的加载动画</li>
+                                <li>修改：<code>Capslock+LAlt+E / D</code>从页面上 / 下移动 1 行（光标不动）改成移动 5 行</li>
+                                <li>修改：加载不到（或程序主动不加载）图标时用"空白文件"样式的图标，而不是无图标</li>
+                                <li>修改：优化 Qbar 输入时的提示逻辑</li>
+                                <li>修改：优化偶尔出现窗口绑定最小化后无法激活（最小化后却仍保持激活状态）的问题</li>
+                                <li>修改：修复 Qbar 刚出现的时候按下按键会触发相应按键的 Capslock+ 功能的问题</li>
+                                <li>修改：优化 Capslock 键松开后恢复原状态的速度</li>
+                                <li>修改：修复两个鼠标速度不同的窗口之间（游戏窗口很多都可以设置与正常环境下不同的鼠标速度），用<code>WinBind</code>切换后，会将激活前窗口的鼠标速度设置带到激活后的窗口下的问题。
+                                </li>
+                                <li>修改：修复文件（夹）名字是网站域名时，运行其路径时被当成网页打开的问题</li>
+                                <li>修改：暴力修复在 Excel 使用复制功能会弹出<code>图片太大，超过部分将被截取。</code>的问题（这应该是 Excel 的问题），代价是复制粘贴时
+                                    Excel 窗口会闪烁一下，暂时没想到更好的解决办法。</li>
+                                <li>添加：F12 关闭独立剪贴板功能。（主要给 Excel 里复制时弹窗<code>图片太大，超过部分将被截取。</code>用）</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="moreLogBtn" onclick="moreLogOrNot()">更多版本历史</div>
+                <div class="old-version" style="display:none">
+                    <ul>
+                        <li>
+                            <p><strong>v2.5.3 | 2016-6-12</strong></p>
+                            <ul>
+                                <li>下载：<a href="https://cjkis.me/assets/hexo/Capslock+_v2.5.3.7.exe" download="Capslock+_v2.5.3.7.exe" target="_blank" rel="external">Capslock+_v2.5.3.7.exe (880kb)</a></li>
+                                <li>修改：修复<code>QBar</code>在屏幕放大时不能显示完全的问题</li>
+                                <li><s>添加：按下<code>Caplock</code>临时改变鼠标速度</s></li>
+                                <li><s>添加：<code>Caplock+鼠标滚轮上 / 下</code>加快 / 降低按下 Capslock 时的鼠标速度</s></li>
+                                <li>添加：按下<code>Caplock+LAlt</code>临时改变鼠标速度</li>
+                                <li>添加：<code>Caplock+LAlt+鼠标滚轮上 / 下</code>加快 / 降低按下 Capslock+LAlt 时的鼠标速度</li>
+                                <li>修改：修复打开程序时报<code>Error: 0x80004005</code>的问题</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.5.2 | 2016-3-27</strong></p>
+                            <ul>
+                                <li>下载：<a href="https://cjkis.me/assets/hexo/Capslock+_v2.5.3.7.exe" download="Capslock+_v2.5.3.7.exe" target="_blank" rel="external">Capslock+_v2.5.3.7.exe (880kb)</a></li>
+                                <li>修改：计算功能修改，以支持更复杂的运算</li>
+                                <li>添加：<code>-&gt;web</code>, <code>-&gt;run</code>, <code>-&gt;string</code>命令</li>
+                                <li>删除：记录到<code>TabHotString</code>的<code>=&gt;</code>命令</li>
+                                <li>修改：<code>Capslock+-</code>/<code>=</code>从输出<code> -&gt; </code>/<code> = </code>改为光标上移
+                                    / 下移一页</li>
+                                <li>添加：<code>Capslock+LAlt-</code>/<code>=</code>页面上移 / 下移一页</li>
+                                <li>修改：<code>Capslock+LAlt+E</code>/<code>D</code>从上下5行改为页面上移 / 下移1行</li>
+                                <li>修改：<code>Capslock+Y</code>/<code>B</code>从上 / 下选中5行改为上 / 下5行</li>
+                                <li>删除：<code>Capslock+M</code>/<code>RAlt</code>鼠标滚轮上 /
+                                    下，原功能可以由现在的<code>Capslock+LAlt+E</code>/<code>D</code>代替</li>
+                                <li>删除：<code>Capslock+0</code>从输出<code>[]</code>改为向上选中 5 行</li>
+                                <li>添加：<code>Capslock+M</code>向下选中 5 行</li>
+                                <li>修改：<code>Capslock+]</code>从输出换行的<code>{}</code>改为输出<code>[]</code></li>
+                                <li>添加：<code>Capslock+LAlt+A</code>光标跳到页首</li>
+                                <li>添加：<code>Capslock+LAlt+G</code>光标跳到页尾</li>
+                                <li>删除：<code>Capslock+RAlt</code>向下选中 5 行</li>
+                                <li>删除：<code>Capslock+/</code>输出<code>/**/</code></li>
+                                <li>修改：修复自定义翻译 api key 缺少 keyfrom 参数的 bug</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.5.1 | 2016-3-18</strong></p>
+                            <ul>
+                                <li>添加：<code>+Q</code>内输入路径浏览文件夹</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.5.0 | 2016-2-14</strong></p>
+                            <ul>
+                                <li>添加：<code>+Q</code>内输入网址可直接跳转</li>
+                                <li>添加：<code>Capslock+settings.ini</code>设置和打开它的<code>cl set</code>命令</li>
+                                <li>添加：开机自启动设置</li>
+                                <li>添加：启动快捷键<code>Ctrl+Alt+C</code></li>
+                                <li>添加：开放<code>+Q</code>样式设置</li>
+                                <li>添加：<code>-&gt;</code><code>=&gt;</code>命令</li>
+                                <li>添加：<code>+LAlt+E</code>/<code>+LAlt+D</code>=&gt;上/下5次</li>
+                                <li>添加：<code>+LAlt+S</code>/<code>+LAlt+F</code>=&gt;标签页左/右切换</li>
+                                <li>修改：<code>+run</code>文件夹的快速启动功能由<code>Capslock+settings.ini</code>里的<code>[QRun]</code>承担
+                                </li>
+                                <li>删除：<code>+run</code>文件夹和相关功能</li>
+                                <li>修改：<code>Capslock+hotString.ini</code>的热字串记录由<code>Capslock+settings.ini</code>里的<code>[TabHotString]</code>承担
+                                </li>
+                                <li>删除：<code>Capslock+hotString.ini</code></li>
+                                <li>修改：改进<code>+T</code>翻译，先弹窗再填翻译结果；二次翻译不再关闭旧窗口弹出新窗口，而是沿用同一个窗口</li>
+                                <li>修改：窗口绑定双击绑定多个独立窗口，三击绑定窗口当前程序的所有窗口(包括绑定操作后打开的)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.4.5 | 2015-12-22</strong></p>
+                            <ul>
+                                <li>添加：<code>+LAlt+`</code>为0号窗口绑定</li>
+                                <li>修改：<code>+`</code>从启动+run文件夹中<code>most.lnk</code>功能改为0号绑定窗口激活/最小化</li>
+                                <li>修改：<code>+LAlt+8</code>从输出<code>*</code>号改为8号窗口绑定</li>
+                                <li>添加：<code>+8</code>绑定窗口激活/最小化</li>
+                                <li>添加：窗口绑定添加启动功能，当之前绑定在某按键上的窗口不存在，而且不存在由该程序创建的其他窗口时，启动该程序</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.4.4 | 2015-12-04</strong></p>
+                            <ul>
+                                <li>添加：<code>+LAlt+M,.JKLUIO</code>=&gt;<code>1234567890</code>，<code>+LAlt+space</code>
+                                    <code>n</code>=&gt;<code>9</code> <code>.</code></li>
+                                <li>添加：<code>+LAlt+=(或')</code>=&gt;<code>+</code>，<code>+LAlt+-(或p)</code>=&gt;<code>-</code>，<code>+LAlt+8(或[)</code>=&gt;<code>*</code>，<code>+LAlt+/</code>=&gt;<code>/</code>
+                                </li>
+                                <li>添加：<code>+LAlt+W</code>=&gt;<code>Backspace</code>，<code>+LAlt+R</code>=&gt;<code>Delete</code>，<code>+LAlt+Backspace</code>=&gt;<code>Backspace</code>
+                                </li>
+                                <li>添加：窗口绑定在重启Capslock+后依然有效</li>
+                                <li>添加：窗口绑定在原窗口关闭后自动寻找同程序窗口进行绑定</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.4.3 | 2015-11-23</strong></p>
+                            <ul>
+                                <li>修改：修复<code>+T</code>翻译在一些代码编辑器里不能准确选词</li>
+                                <li>修改：修复<code>+Q</code>在一些代码编辑器里呼出时会选中光标所在行文字的问题</li>
+                                <li>修改：启动先加载<code>+Q</code>，避免第一次启动时有一小段时间无法操作</li>
+                                <li>修改：<code>+F3</code>换成下一首歌，计算功能放到<code>+F2</code></li>
+                                <li>添加：<code>+.</code>输出<code>.</code>，方便中文输入法下输入点符号</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.4.2 | 2015-10-25</strong></p>
+                            <ul>
+                                <li>修改：修复计算功能发现的bug</li>
+                                <li>添加：<code>+Tab</code>自定义字符串替换，和计算功能共存</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.4.1 | 2015-10-17</strong></p>
+                            <ul>
+                                <li>删除：上次加的翻译动画会稍微拖慢翻译速度，接受不了，删了</li>
+                                <li>删除：<code>+F3</code>下一首音乐</li>
+                                <li>添加：<code>+Tab</code>计算当前光标左边的数学表达式的值</li>
+                                <li>添加：<code>+F3</code>计算当前选中的数学表达式的值</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.4.0 | 2015-10-15</strong></p>
+                            <ul>
+                                <li>添加：<code>+Q</code>添加<code>wk</code> <code>string</code>: 维基百科</li>
+                                <li>修改：交换<code>+[</code>和<code>+]</code>的功能：<code>+[</code>现在是不展开的<code>{</code>
+                                    <code>}</code>，<code>+]</code>现在是展开的<code>{</code> <code>}</code>，这样应该比较合理</li>
+                                <li>修改：<code>+9</code> <code>+=</code> <code>+[</code> <code>+'</code>
+                                    <code>+/</code> 现在如果在选中文字时使用，会分别在文字两端加上<code>()</code> <code>++</code>
+                                    <code>{}</code> <code>""</code> <code>/**/</code></li>
+                                <li>修改：选中两端已经有<code>/**/</code>的文字时使用<code>+/</code>将会删掉两端的<code>/**/</code></li>
+                                <li>修改：<code>+T</code>翻译界面小调，半透明化，方便看着背后文字输入</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.3.2 | 2015-10-11</strong></p>
+                            <ul>
+                                <li>修改：修复翻译结果中<code>'</code> <code>"</code>字符以HTML编码和16进制编码形式出现的问题</li>
+                                <li>修改：CL+的剪贴板和原系统剪贴板独立开，可以分别复制(剪切)/粘贴不同内容</li>
+                                <li>添加：<code>+,</code>=<code>&lt;</code> <code>&gt;</code>，光标在中间</li>
+                                <li>添加：翻译中动画</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.3.1 | 2015-09-28</strong></p>
+                            <ul>
+                                <li>修改：修复翻译字段不能包含换行符的问题</li>
+                                <li>修改：改进<code>+Q</code>的实现,提高效率</li>
+                                <li>修改：为<code>+run</code>文件提示列表添加图标</li>
+                                <li>添加：<code>+Q</code>状态下按<code>Tab</code>展开列表</li>
+                                <li>删除：一些<code>+Q</code>命令：知乎搜索，r(run)运行</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.3.0 | 2015-09-25</strong></p>
+                            <ul>
+                                <li>修改：重制<code>+T</code>翻译界面，翻译结果现在可以复制，翻译结果界面可以当做输入框输入要翻译的文本，回车后可再次翻译</li>
+                                <li>修改：重制<code>+Q</code>弹出框界面，实现方法更合理、可靠、快速，弹出的<code>Capslock+run</code>文件列表现在可以用<code>+e(或Up键)</code>,<code>+d(或Down键)</code>上下选择，<code>Tab</code>键可以将选中的文件名放到输入框(如果没有选中文件名，会将第一个文件名放到输入框)
+                                </li>
+                                <li>修改：重制图标并更换成多尺寸图标</li>
+                                <li>修改：改进<code>+T</code>翻译，空白处(无法复制任何文字的窗口)按<code>+T</code>弹出空白框可输入文字翻译；翻译后焦点在文本框，可以不用鼠标直接清空文字重新翻译
+                                </li>
+                                <li>添加：<code>+Q</code>添加快速移动文件到<code>Capslock+run</code>文件夹功能：选中快捷文件后，按<code>+Q</code>，文件路径出现在输入框后，回车，确认后该文件会移动到<code>Capslock+run</code>文件夹。
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p><strong>v2.2.3 | 2015-09-23</strong></p>
+                            <ul>
+                                <li>修改：各符号(如<code>+9</code>输出<code>(</code>
+                                    <code>)</code>)输出机制(从发送键盘操作改成发送字符unicode码),不会受中文输入法状态影响而输出中文符号</li>
+                                <li>添加：<code>+T</code>翻译选中的或光标所在的单词</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.2.2 | 2015-09-22</strong></p>
+                            <ul>
+                                <li>修改：<code>+M</code>,<code>+RAlt</code>鼠标滚轮上下</li>
+                                <li>修改：<code>+H</code>原本是选中光标左侧接触到的一个单词（光标在单词中间可以选中左边和右边字符），但由于实现机制问题，选中后不能继续向左选中单词，现在改成选中光标左边单词（光标在单词中间只能选中左边字符），多次按下可多次向左选中
+                                </li>
+                                <li>添加：<code>+N</code>选中光标右侧单词</li>
+                                <li>添加：<code>+Y</code>,<code>+N</code>光标上下5行</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p><strong>v2.2.1 | 2015-09-01</strong></p>
+                            <ul>
+                                <li>添加：<code>+6</code> <code>+7</code>两个窗口绑定</li>
+                                <li>修改：<code>+M</code> <code>+Ralt</code>上下7行到上下5行，机制从滚屏驱动光标移动到光标移动驱动滚屏</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.2.0 | 2015-08-10</strong></p>
+                            <ul>
+                                <li>删除：<ol>
+                                        <li><code>+24</code>=&gt;左右高亮</li>
+                                        <li><code>+3</code>、<code>+LAlt</code>=&gt;上下高亮</li>
+                                        <li><code>+1</code>=&gt;下一首歌</li>
+                                        <li><code>+M,.JKLUIO</code>=&gt;123456789，<code>+RAlt</code>=&gt;0</li>
+                                    </ol>
+                                </li>
+                                <li>添加：<ol>
+                                        <li><code>Capslock</code>+<code>LAlt</code>+<code>1~5</code>=&gt;绑定窗口到1~5按键</li>
+                                        <li><code>Capslock</code>+<code>1~5</code>=&gt;激活/最小化该键位绑定的窗口</li>
+                                        <li><code>+Z</code>=&gt;撤销</li>
+                                        <li><code>+IKJL</code>=&gt;上下左右高亮</li>
+                                        <li><code>+H</code>=&gt;高亮光标所在单词</li>
+                                        <li><code>+UO</code>=&gt;高亮到行首、行尾</li>
+                                        <li><code>+M</code>、<code>+RAlt</code>=&gt;光标上下7行</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.1.3 | 2015-08-08</strong></p>
+                            <ul>
+                                <li>修改：<code>+2</code> <code>+4</code>为左右高亮，<code>+A</code> <code>+G</code>为左右跳词</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.1.2 | 2015-07-16</strong></p>
+                            <ul>
+                                <li>修改：<code>+2</code> <code>+4</code>:从上下翻页改为左右跳词</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.1.1 | 2015-07-13</strong></p>
+                            <ul>
+                                <li>增加：<code>+T</code>选择光标所在单词</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.1.0 | 2015-06-12</strong></p>
+                            <ul>
+                                <li>修改：重制<code>+Q</code>界面，增加提示功能(CL+run下的所有文件)，暂时不支持从提示项中选择</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.0.5 | 2015-06-06</strong></p>
+                            <ul>
+                                <li>删除：<code>+3</code>删词</li>
+                                <li>修改：<code>+C</code>,如高亮文字时使用，则复制该文字并跳到最后;否则，复制该行文字并跳到最后</li>
+                                <li>修改：<code>+X</code>,如高亮文字时使用，则剪切该文字并跳到最后;否则，剪切该行文字并跳到最后</li>
+                                <li>修改：<code>+A</code> <code>+G</code>，从左右跳词改为左右高亮</li>
+                                <li>修改：<code>+V</code>,从换行后粘贴改为普通粘贴</li>
+                                <li>修改：<code>+[</code>出一对大括号和编程工具自动补充重复</li>
+                                <li>添加：<code>+3</code>向上高亮一行</li>
+                                <li>添加：<code>+LAlt</code>向下高亮一行</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p><strong>v2.0.4 | 2015-05-28</strong></p>
+                            <ul>
+                                <li>修改：修复<code>+Q</code>偶尔选不中文字</li>
+                                <li>修改：<code>+V</code>从普通粘贴修改为换行后粘贴</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.0.3 | 2015-05-21</strong></p>
+                            <ul>
+                                <li>添加：<code>+`</code>打开Capslock+run文件夹下的<code>most.lnk</code>快捷方式，可以把一个常用的放到下面并命名为most
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.0.2 | 2015-05-15</strong></p>
+                            <ul>
+                                <li>修改：<code>+A</code> <code>+G</code>从<code>Home</code> <code>End</code>改为左右跳词</li>
+                                <li>修改：<code>+C</code>,复制完一行后跳到行末,而不是在行首且高亮整行</li>
+                                <li>修改：修复帮助文本弹出后Capslock+功能保持开启</li>
+                                <li>修改：用复制本程序再运行的方法实现多进程，从而解决弹出框时热键失效的问题</li>
+                                <li>添加：<code>+Space</code>=&gt;<code>Enter</code></li>
+                                <li>添加：<code>+3</code>=&gt;快速删除功能</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p><strong>v2.0.1 | 2015-05-14</strong></p>
+                            <ul>
+                                <li>添加：<code>+F3</code>下一首音乐</li>
+                                <li>添加：<code>+Q</code>指令添加自动填入选中文字功能，有道翻译，run运行</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v2.0.0 | 2015-05-11</strong></p>
+                            <ul>
+                                <li>修改：部分按键重新布局</li>
+                                <li>增加：<code>Capslock</code>添加犹豫时间，长按后松开不再触发大小写切换</li>
+                                <li>增加：<code>+Q</code>指令</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>v1.x | 2014</strong></p>
+                            <ul>
+                                <li>各种热键</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 多说评论框 start -->
+    <section id="comments">
+        <!--<div id="ds-thread" class="ds-thread" data-thread-key="capslock+/" data-title="Capslock+" data-url="http://cjkis.me/capslock+/"></div>-->
+        <div id="disqus_thread"><iframe id="dsq-app3152" name="dsq-app3152" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Capslock+_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 6525px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+    </section>
+    <!-- 多说评论框 end -->
+    </article>
+
+    </section>
+
+    <div id="toc" class="toc-article">
+        <div class="toc-wrap">
+            <strong class="toc-title">目录</strong>
+            <ol class="toc" style="max-height: 824px;">
+                <li class="toc-item toc-level-1">
+                    <a class="toc-link" href="https://capslox.com/capslock-plus/#%E6%A6%82%E8%BF%B0">
+                        <span class="toc-number"></span> <span class="toc-text">概述</span>
+                    </a>
+                </li>
+                <li class="toc-item toc-level-1">
+                    <a class="toc-link" href="https://capslox.com/capslock-plus/#aboutCapslockPlus">
+                        <span class="toc-number"></span> <span class="toc-text">了解 Capslock+</span>
+                    </a>
+                </li>
+                <li class="toc-item toc-level-1">
+                    <a class="toc-link" href="https://capslox.com/capslock-plus/#%E4%B8%8B%E8%BD%BD%E4%BD%BF%E7%94%A8">
+                        <span class="toc-number"></span> <span class="toc-text">下载使用</span>
+                    </a>
+                    <ol class="toc-child">
+                        <li class="toc-item toc-level-2">
+                            <a class="toc-link" href="https://capslox.com/capslock-plus/#%E4%B8%8B%E8%BD%BD">
+                                <span class="toc-number"></span> <span class="toc-text">下载</span>
+                            </a>
+                        </li>
+                        <li class="toc-item toc-level-2">
+                            <a class="toc-link" href="https://capslox.com/capslock-plus/#%E4%BD%BF%E7%94%A8">
+                                <span class="toc-number"></span> <span class="toc-text">使用</span>
+                            </a>
+                        </li>
+                    </ol>
+                </li>
+                <li class="toc-item toc-level-1">
+                    <a class="toc-link" href="https://capslox.com/capslock-plus/#%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E">
+                        <span class="toc-number"></span> <span class="toc-text">功能说明</span>
+                    </a>
+                    <ol class="toc-child">
+                        <li class="toc-item toc-level-2">
+                            <a class="toc-link active" href="https://capslox.com/capslock-plus/#basicFunctions">
+                                <span class="toc-number"></span> <span class="toc-text">基础功能</span>
+                            </a>
+                        </li>
+                        <li class="toc-item toc-level-2">
+                            <a class="toc-link" href="https://capslox.com/capslock-plus/#advancedFunctions">
+                                <span class="toc-number"></span> <span class="toc-text">高级功能</span>
+                            </a>
+                            <ol class="toc-child">
+                                <li class="toc-item toc-level-3">
+                                    <a href="https://capslox.com/capslock-plus/#clTabScript" class="toc-link">
+                                        <span class="toc-text">TabScript</span>
+                                    </a>
+                                </li>
+                            </ol>
+                            <ol class="toc-child">
+                                <li class="toc-item toc-level-3">
+                                    <a href="https://capslox.com/capslock-plus/#clWinBind" class="toc-link">
+                                        <span class="toc-text">WinBind</span>
+                                    </a>
+                                </li>
+                            </ol>
+                            <ol class="toc-child">
+                                <li class="toc-item toc-level-3">
+                                    <a href="https://capslox.com/capslock-plus/#clQbar" class="toc-link">
+                                        <span class="toc-text">Qbar</span>
+                                    </a>
+                                </li>
+                            </ol>
+                        </li>
+                        <!--<li class="toc-item toc-level-2">
+                        <a class="toc-link" href="#experimentalFunctions">
+                          <span class="toc-number"></span> <span class="toc-text">试验功能</span>
+                        </a>
+                      </li>-->
+                    </ol>
+                </li>
+                <li class="toc-item toc-level-1">
+                    <a class="toc-link" href="https://capslox.com/capslock-plus/#%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E">
+                        <span class="toc-number"></span> <span class="toc-text">补充说明</span>
+                    </a>
+                    <ol class="toc-child">
+                        <li class="toc-item toc-level-2">
+                            <a class="toc-link" href="https://capslox.com/capslock-plus/#%E5%85%B3%E4%BA%8E%E6%96%87%E5%AD%97%E6%93%8D%E4%BD%9C%E7%9A%84%E6%9C%BA%E5%88%B6">
+                                <span class="toc-number"></span> <span class="toc-text">关于文字操作的机制</span>
+                            </a>
+                        </li>
+                        <li class="toc-item toc-level-2">
+                            <a class="toc-link" href="https://capslox.com/capslock-plus/#%E5%85%B3%E4%BA%8E%E8%AE%A1%E7%AE%97%E7%9A%84%E8%AF%A6%E7%BB%86%E8%AF%B4%E6%98%8E">
+                                <span class="toc-number"></span> <span class="toc-text">关于计算的详细说明</span>
+                            </a>
+                        </li>
+                        <!--<li class="toc-item toc-level-2">
+                        <a class="toc-link" href="#aboutUpdate">
+                          <span class="toc-number"></span> <span class="toc-text">关于更新</span>
+                        </a>
+                      </li>-->
+                    </ol>
+                </li>
+                <li class="toc-item toc-level-1">
+                    <a class="toc-link" href="https://capslox.com/capslock-plus/#%E8%81%94%E7%B3%BB%E6%88%91">
+                        <span class="toc-number"></span> <span class="toc-text">联系我</span>
+                    </a>
+                </li>
+                <li class="toc-item toc-level-1">
+                    <a class="toc-link" href="https://capslox.com/capslock-plus/#%E7%89%88%E6%9C%AC%E5%8E%86%E5%8F%B2">
+                        <span class="toc-number"></span> <span class="toc-text">版本历史</span>
+                    </a>
+                </li>
+                <li class="toc-item toc-level-1">
+                    <a class="toc-link" href="https://capslox.com/capslock-plus/#comments">
+                        <span class="toc-number"></span> <span class="toc-text">评论</span>
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <footer id="footer">
+        <div class="outer">
+            <div id="footer-info" class="inner">
+                © 陈俊凯<br>
+            </div>
+        </div>
+    </footer>
+    <!-- totop start -->
+    <div id="totop" style="opacity: 0.7; display: block;">
+        <a title="返回顶部"><img src="./Capslock+_files/scrollup.png"></a>
+        <!--<span><i class="icon-arrow-up"></i></span>-->
+    </div>
+    <!-- totop end -->
+
+    <script>
+        var disqus_shortname = 'cjkisme';
+
+        var disqus_url = 'http://cjkis.me/capslock+/';
+
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
+    <script src="./Capslock+_files/jquery.min.js.download" type="text/javascript"></script>
+
+
+    <!-- <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> -->
+
+
+
+    <script src="./Capslock+_files/script.js.download" type="text/javascript"></script>
+
+
+    <script src="./Capslock+_files/toc.js.download" type="text/javascript"></script>
+    <script src="./Capslock+_files/common.js.download" type="text/javascript"></script>
+
+
+
+    </div>
+
+
+
+<!-- cjk add end-->
+</div><iframe __idm_frm__="1416" style="display: none;" src="./Capslock+_files/saved_resource(1).html"></iframe></body></html>

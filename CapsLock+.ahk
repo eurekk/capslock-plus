@@ -307,7 +307,55 @@ Return
 ;  Capslock2:=""
 ;  return
 
+;---------------------caps+shift----------------
 
++i::
+try
+    runFunc(keyset.caps_shift_i)
+Capslock2:=""
+return
+
++j::
+try
+    runFunc(keyset.caps_shift_j)
+Capslock2:=""
+return
+
++k::
+try
+    runFunc(keyset.caps_shift_k)
+Capslock2:=""
+return
+
++l::
+try
+    runFunc(keyset.caps_shift_l)
+Capslock2:=""
+return
+
++u::
+try
+    runFunc(keyset.caps_shift_u)
+Capslock2:=""
+return
+
++o::
+try
+    runFunc(keyset.caps_shift_o)
+Capslock2:=""
+return
+
++m::
+try
+    runFunc(keyset.caps_shift_m)
+Capslock2:=""
+return
+
++.::
+try
+    runFunc(keyset.caps_shift_dot)
+Capslock2:=""
+return
 
 ;---------------------caps+lalt----------------
 

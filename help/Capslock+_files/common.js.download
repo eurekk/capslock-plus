@@ -1,0 +1,80 @@
+var winH=document.documentElement.clientHeight||document.body.clientHeight;
+var htmlStr='<style>';
+htmlStr+='@-webkit-keyframes slideDown {0% {-webkit-transform:translateY(0);}100% {-webkit-transform:translateY('+winH+'px);}}';
+htmlStr+='@-moz-keyframes slideDown {0% {-moz-transform:translateY(0);}100% {-moz-transform:translateY('+winH+'px);}}';
+htmlStr+='@-o-keyframes slideDown {0% {-o-transform:translateY(0);}100% {-o-transform:translateY('+winH+'px);}}';
+htmlStr+='@keyframes slideDown {0% {transform:translateY(0);}100% {transform:translateY('+winH+'px);}}';
+htmlStr+='.animated.slideDown {-webkit-animation-name:slideDown;-moz-animation-name:slideDown;-o-animation-name:slideDown;animation-name:slideDown}';
+htmlStr+='@-webkit-keyframes slideUp {0% {-webkit-transform:translateY('+winH+'px);}100% {-webkit-transform:translateY(0);}}';
+htmlStr+='@-moz-keyframes slideUp {0% {-moz-transform:translateY('+winH+'px);}100% {-moz-transform:translateY(0);}}';
+htmlStr+='@-o-keyframes slideUp {0% {-o-transform:translateY('+winH+'px);}100% {-o-transform:translateY(0);}}';
+htmlStr+='@keyframes slideUp {0% {transform:translateY('+winH+'px);}100% {transform:translateY(0);}}';
+htmlStr+='.animated.slideUp {-webkit-animation-name:slideUp;-moz-animation-name:slideUp;-o-animation-name:slideUp;animation-name:slideUp;}';
+htmlStr+='</style>';
+$('body').prepend(htmlStr);
+
+
+
+var slideFlag = 0,
+    isIE = !-[1,]||/MSIE 9.0/.test(navigator.appVersion); //ie<=9
+
+function slideUp(){
+    if(isIE){
+        $('#banner').animate({height:'0'},500);
+    }else{
+        $('#banner').removeClass('slideDown').addClass('slideUp animated');
+    }
+    slideFlag=0;
+}
+function slideDown(){
+    if(isIE){
+        $('#banner').animate({height:'100%'},500);
+    }else{
+        $('#banner').removeClass('slideUp').addClass('slideDown animated');
+    }
+    slideFlag=1;
+}
+function scrollFunc(e){
+    var wheelEven = 0;
+    e = e || window.event;
+    if(e.wheelDelta){//IE/Opera/Chrome
+        wheelEven = e.wheelDelta>0?0:1;
+    }else if(e.detail){//Firefox
+        wheelEven = e.detail<0?0:1;
+    }
+    if(slideFlag && wheelEven){
+        slideUp();
+    }else if(!slideFlag && !wheelEven && $(document).scrollTop()<1){
+        // slideDown();
+    }else{
+        return true
+    }
+
+    e.preventDefault()
+    return false
+}
+function moreLogOrNot(){
+    $('.old-version').toggle('fast');
+    $('#moreLogBtn').text()=='收起'?$('#moreLogBtn').text('更多版本历史'):$('#moreLogBtn').text('收起');
+}
+/*注册事件*/
+var config = { capture: false, passive: false }
+if(/FireFox/i.test(navigator.userAgent))//document.addEventListener
+    document.addEventListener('DOMMouseScroll', scrollFunc, config);
+else if(isIE) //if IE<9
+    document.attachEvent('onmousewheel', scrollFunc, config);
+else
+    document.addEventListener('mousewheel', scrollFunc, config);
+    // window.onmousewheel = document.onmousewheel = scrollFunc;//IE/Opera/Chrome/Safari
+
+// $(function(){
+//     //设置banner版本，同一版本下，每个用户十年内只需看一次。看过了的话banner在十年内不再落下
+//     //如果banner放了新内容，可以手动修改版本号来让banner落下
+//     var bannerVersion = '1.0',
+//         viewStr = 'hadView-' + bannerVersion,
+//         cookieRegex = new RegExp(viewStr);
+//     if(!cookieRegex.test(document.cookie)){
+//         slideDown();
+//         document.cookie = viewStr + '; expires=Fri, 31 Dec 9999 23:59:59 GMT; max-age = ' + 60*60*24*3650;
+//     }
+// })

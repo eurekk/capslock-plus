@@ -1,0 +1,195 @@
+!function($){
+var $toc=$('#toc'),
+    $clsToc=$toc.find('.toc'),
+    $tocLinks=$('#toc a.toc-link'),
+    linksIndex=(function(){
+        var arr=[];
+        $tocLinks.each(function(index){
+            arr.push(document.querySelector('[id="'+this.getAttribute('href').replace(/^#/,'')+'"]'));
+        });
+        return arr;
+    })();;
+    // winHeight=$(window).height(),
+    // sightHeight=winHeight/3;
+function tocFixed(){
+    var tocActive=$toc.hasClass('active');
+    var mainTop=$('#main')[0].getBoundingClientRect().top;
+    if(!tocActive && mainTop<0){
+        var tw = $toc.width();
+        var pw = $(window).width();
+        $toc.addClass('active');
+        $toc.width(tw/pw*100+'%');
+        // $toc.width('285px');
+    }else if(tocActive && mainTop>=0){
+        $toc.width('');
+        $toc.removeClass('active');
+    }
+}
+function tocActive(){
+    // console.log('tocActive')
+    var cTocPosTop = $clsToc.position().top,            //.toc离视窗顶部距离
+        cTocH      = $clsToc.outerHeight();                  //.toc容器的高度
+    for(var i=$tocLinks.length-1;i>=0;i--){
+        //这里的querySelector直接用id字符串的话，里面包含括号之类的特殊符号就会出错，所以要用[id=...]来解决
+        var top=linksIndex[i].getBoundingClientRect().bottom;
+        if(top<$(window).height()/3){
+            $tocLinks.removeClass('active');
+            $tocLinks.eq(i).addClass('active');
+            
+            
+            //如果现在激活的标签在总高度的1/3以下，把它移到1/3的高度.
+            var tociPosTop = $tocLinks.eq(i).position().top,    //现激活的toc链接离视窗顶部距离
+                cTocScroll = $clsToc.scrollTop();               //.toc滚动过的距离
+            
+            //如果滚动条在顶部或者到了最后，就返回，不移动toc的位置
+            if(cTocScroll == 0 || cTocH+cTocScroll>=$clsToc[0].scrollHeight)
+                return
+
+                
+            if(cTocPosTop+cTocH/3 < tociPosTop){
+                var goHeight = cTocScroll+tociPosTop-cTocPosTop-cTocH/3;
+                $clsToc.scrollTop(goHeight);
+            }else if(cTocPosTop+cTocH/4 > tociPosTop){
+                var goHeight = cTocScroll+tociPosTop-cTocPosTop-cTocH/4;
+                $clsToc.scrollTop(goHeight);
+            }
+            return
+        }
+    }
+}
+
+// function tocActiveNew(){
+//     var sigh=$(window).height()/3;
+//     for(var upDown=0;;){
+//         var linkActIndex = $tocLinks.hasClass('active') ? linksIndex[$tocLinks.filter('.active').attr('href')] : 0,
+//             $check1=$tocLinks.eq(linkActIndex),yes1=1,yes2=-1;
+        
+//         if(upDown!=-1){    //向下检查有没看到那个部分
+//             if(linkActIndex+1<=$tocLinks.length-1){
+//                 var $check2=$tocLinks.eq(linkActIndex+1);
+//             }else{
+//                 var $check2=$tocLinks.eq($tocLinks.length-1);
+//             }
+            
+//         }else            //向上检查
+//             var $check2=$tocLinks.eq(linkActIndex-1<=0 ? 0 : linkActIndex-1);
+        
+//         //这里的querySelector直接用id字符串的话，里面包含括号之类的特殊符号就会出错，所以要用[id=...]来解决
+//         var id1=$check1[0].getAttribute('href').replace(/^#/,''),
+//             id2=$check2[0].getAttribute('href').replace(/^#/,'');
+//         var top1=document.querySelector('[id="'+id1+'"]').getBoundingClientRect().bottom,
+//             top2=document.querySelector('[id="'+id2+'"]').getBoundingClientRect().bottom;
+//         if(top1==top2)return;
+        
+//         if(top1<sigh)yes1=1;
+//         if(top2<sigh)yes2=1;
+        
+//         if(upDown==1){
+//             if(yes1==yes2){
+//                 setActive($check2);
+//             }else{
+//                 setActive($check1);
+//                 return
+//             }
+//         }else if(upDown==-1){
+//             if(yes1==yes2){
+//                 setActive($check1);
+//                 return;
+//             }else{
+//                 setActive($check2);
+//             }
+//         }else{
+//             if(yes1==yes2){
+//                 setActive($check2);
+//                 upDown=1;
+//             }else{
+//                 setActive($check1);
+//                 upDown=-1;
+//             }
+//         }
+
+//     }
+// }
+function setActive($checking){
+    $tocLinks.removeClass('active');
+    $checking.eq(0).addClass('active');
+    //如果现在激活的标签在总高度的1/3以下，把它移到1/3的高度.
+    var cTocPosTop = $clsToc.position().top,            //.toc离视窗顶部距离
+        cTocH      = $clsToc.height(),                  //.toc容器的高度
+        tociPosTop = $checking.eq(0).position().top,    //现激活的toc链接离视窗顶部距离
+        cTocScroll = $clsToc.scrollTop();               //.toc滚动过的距离
+        
+    if(cTocPosTop+cTocH/3 < tociPosTop){
+        var goHeight = cTocScroll+tociPosTop-cTocPosTop-cTocH/3;
+        $clsToc.scrollTop(goHeight);
+    }else if(cTocPosTop+cTocH/4 > tociPosTop){
+        var goHeight = cTocScroll+tociPosTop-cTocPosTop-cTocH/4;
+        $clsToc.scrollTop(goHeight);
+    }
+}
+function tocResize(){
+    $toc.find('.toc').css('max-height',$(window).height()-150 + 'px');
+}
+function set4Mobile(){
+    if($(window).width()<480){
+        $('#toc').remove().appendTo('#mobile-nav');
+        $('.tableWrap').css('overflow-x','auto');
+    }   
+}
+
+// set4Mobile();
+// tocFixed();
+tocActive();
+tocResize();
+
+// Returns a function, that, when invoked, will only be triggered at most once
+// during a given window of time. Normally, the throttled function will run
+// as much as it can, without ever going more than once per `wait` duration;
+// but if you'd like to disable the execution on the leading edge, pass
+// `{leading: false}`. To disable execution on the trailing edge, ditto.
+function throttle(func, wait, options) {
+    var context, args, result;
+    var timeout = null;
+    var previous = 0;
+    if (!options) options = {};
+    var later = function () {
+        previous = options.leading === false ? 0 : Date.now();
+        timeout = null;
+        result = func.apply(context, args);
+        if (!timeout) context = args = null;
+    };
+    return function () {
+        var now = Date.now();
+        if (!previous && options.leading === false) previous = now;
+        var remaining = wait - (now - previous);
+        context = this;
+        args = arguments;
+        if (remaining <= 0 || remaining > wait) {
+            if (timeout) {
+                clearTimeout(timeout);
+                timeout = null;
+            }
+            previous = now;
+            result = func.apply(context, args);
+            if (!timeout) context = args = null;
+        } else if (!timeout && options.trailing !== false) {
+            timeout = setTimeout(later, remaining);
+        }
+        return result;
+    };
+};
+
+$(window).scroll(throttle(tocActive, 100))
+// var timeoutId
+// $(window).scroll(function(){
+//     clearTimeout(timeoutId);
+//     timeoutId=setTimeout(function() {
+//         tocActive();
+//     }, 200);
+// });
+// $(window).scroll(function(){
+//     tocFixed();
+// });
+$(window).resize(tocResize);
+}(jQuery)
+
